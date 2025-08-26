@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Karonji Waithaka - Software Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">PK</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Paul Karonji Waithaka</h1>
+            <p class="subtitle">Software Developer & Network Specialist</p>
+            <p class="description">
+                Final-year Software Development student with hands-on experience in network administration, 
+                server maintenance, and full-stack development. Passionate about creating innovative solutions 
+                and committed to delivering excellence in every project.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section fade-in" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <!-- Profile Image Section -->
+           <div class="profile-image-container">
+    <div class="upload-area" onclick="document.getElementById('imageUpload').click()">
+        <!-- Replace the src="" with your image link -->
+        <img id="profilePlaceholder" 
+             src="images/paul.JPG" 
+             alt="Profile" 
+             class="profile-placeholder" 
+             style="width:250px; height:250px; border-radius:50%; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+        <input type="file" id="imageUpload" class="image-upload-input" 
+               accept="image/*" style="display:none;">
+    </div>
+</div>
+
+
+            <div class="about-info">
+                <h3 style="color: var(--primary-red); margin-bottom: 1.5rem;">Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <span>+254729089168</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <span>karonjipaul.w@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🎓</div>
+                    <span>KCA University</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <span>Currently seeking Industrial Attachment</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Professional Summary</h3>
+                <p style="margin-bottom: 1.5rem;">
+                    I am a dedicated and motivated final-year Software Development student with practical 
+                    experience in network administration and server maintenance. Currently about to begin 
+                    industrial attachment, I bring hands-on experience gained from previous work in network 
+                    troubleshooting, system integration, and IT support.
+                </p>
+                <p>
+                    My passion for technology drives me to stay current with the latest trends and 
+                    advancements in software development and networking. I am committed to delivering 
+                    efficient solutions in dynamic environments and am always eager to take on new 
+                    challenges that push my technical boundaries.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section fade-in" id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Networking</h3>
+                <ul class="skill-list">
+                    <li>Network device setup and configuration</li>
+                    <li>Network troubleshooting and issue resolution</li>
+                    <li>Network security implementation</li>
+                    <li>Server maintenance and monitoring</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>System Integration</h3>
+                <ul class="skill-list">
+                    <li>Integration of software and hardware components</li>
+                    <li>System optimization and performance tuning</li>
+                    <li>Technical support and problem-solving</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Software Development</h3>
+                <ul class="skill-list">
+                    <li>Web design and development</li>
+                    <li>Full-stack development experience</li>
+                    <li>Responsive web design</li>
+                    <li>Website deployment and hosting</li>
+                    <li>Database management basics</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>General IT Skills</h3>
+                <ul class="skill-list">
+                    <li>Data entry with high accuracy</li>
+                    <li>Computer hardware and software troubleshooting</li>
+                    <li>IT support and customer service</li>
+                    <li>Documentation and reporting</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section fade-in" id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Solo Projects -->
+            <div class="project-card">
+                <div class="project-header">🏥</div>
+                <div class="project-info">
+                    <div class="project-type">Solo Project</div>
+                    <h3>Kenya Hospital Management System</h3>
+                    <p>A comprehensive hospital management system designed to streamline healthcare operations. Features include patient management, appointment scheduling, and medical records management.</p>
+                    <div class="project-links">
+                        <a href="https://paul-karonji.github.io/kenya_Hospital_Management/" target="_blank" class="project-link">View Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">👜</div>
+                <div class="project-info">
+                    <div class="project-type">Solo Project</div>
+                    <h3>Bags with Mulan</h3>
+                    <p>An e-commerce platform showcasing stylish bags and accessories. Built with modern web technologies focusing on user experience and responsive design.</p>
+                    <div class="project-links">
+                        <a href="https://uj1ccurzlsczrigzzshuva.on.drv.tw/www.Bags-with-Mulan/" target="_blank" class="project-link">View Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collaborative Projects -->
+            <div class="project-card">
+                <div class="project-header">🏨</div>
+                <div class="project-info">
+                    <div class="project-type">Collaborative Project</div>
+                    <h3>La Safari Hotel Booking System</h3>
+                    <p>Contributed to developing a comprehensive hotel booking web application with user-friendly interface for hotel reservations and management. Deployed using Vercel platform.</p>
+                    <div class="project-links">
+                        <a href="https://la-safari-hotel-booking.vercel.app/" target="_blank" class="project-link">View Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">🌍</div>
+                <div class="project-info">
+                    <div class="project-type">Collaborative Project</div>
+                    <h3>Mviringo Africa Website</h3>
+                    <p>Participated in designing and developing organizational website for Mviringo Africa. Focused on creating professional web presence with excellent user experience and responsive design.</p>
+                    <div class="project-links">
+                        <a href="https://www.mviringoafrica.org/" target="_blank" class="project-link">View Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section fade-in" id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <div class="experience-title">Assistant Network Help & Server Maintenance</div>
+                    <div class="experience-company">Small Computer Company</div>
+                </div>
+                <div class="experience-date">2024</div>
+            </div>
+            <ul class="skill-list">
+                <li>Provided technical support for network infrastructure and troubleshooting</li>
+                <li>Assisted in server maintenance tasks including monitoring, updates, and performance optimization</li>
+                <li>Supported network device configuration and maintenance</li>
+                <li>Collaborated with senior technicians on system integration projects</li>
+                <li>Gained practical experience in IT support and customer service</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section fade-in" id="education">
+        <h2>Education</h2>
+        <div class="education-card">
+            <div class="education-degree">Bachelor's in Software Development</div>
+            <div class="education-school">KCA University</div>
+            <p style="color: var(--light-grey); margin: 1rem 0;">
+                Strong foundation in software development, networking, and system integration. 
+                Currently preparing for industrial attachment as part of the comprehensive 4-year program.
+            </p>
+            <div class="education-status">2021 - Present | Expected Graduation: 2025</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="tel:+254729089168" class="social-link" title="Phone">📱</a>
+                <a href="mailto:karonjipaul.w@gmail.com" class="social-link" title="Email">✉️</a>
+                <a href="#" class="social-link" title="LinkedIn">💼</a>
+                <a href="#" class="social-link" title="GitHub">💻</a>
+            </div>
+            <p style="color: var(--light-grey);">
+                &copy; 2025 Paul Karonji Waithaka. Designed with passion for innovation.
+            </p>
+            <p style="color: var(--light-grey); font-size: 0.9rem; margin-top: 1rem;">
+                Ready for Industrial Attachment | Available for Professional Opportunities
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
