@@ -1,7 +1,7 @@
 
 # Paul Portfolio
 
-A simple, responsive portfolio for **Paul Karonji Waithaka** split into a clean project structure.
+A simple, responsive portfolio 
 
 ## Structure
 
@@ -12,7 +12,7 @@ paul_portfolio/
 │   └── styles.css
 ├── js/
 │   └── main.js
-└── assets/
+└── images
     └── images/
 ```
 
