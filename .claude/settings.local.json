@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(index_new.html)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

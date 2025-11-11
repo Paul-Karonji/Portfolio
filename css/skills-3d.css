@@ -1,0 +1,212 @@
+/* 3D Skills Sphere Styles */
+.skills-3d-container {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1200px;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.skills-sphere {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    animation: autoRotate 40s linear infinite;
+    transition: transform 0.1s ease-out;
+}
+
+/* Pause animation on hover or drag */
+.skills-sphere:hover,
+.skills-sphere.dragging {
+    animation-play-state: paused;
+}
+
+/* Auto-rotation animation */
+@keyframes autoRotate {
+    from {
+        transform: rotateY(0deg) rotateX(15deg);
+    }
+    to {
+        transform: rotateY(360deg) rotateX(15deg);
+    }
+}
+
+/* Skill orbit - positions each skill in 3D space */
+.skill-orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* Dynamic positioning using CSS variables */
+    transform:
+        rotateY(calc(var(--i) * 24deg))
+        rotateX(calc(var(--i) * 12deg - 90deg))
+        translateZ(300px);
+}
+
+/* 3D Skill Card */
+.skill-3d-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: var(--bg-midnight);
+    border-radius: 16px;
+    border: 2px solid rgba(100, 255, 218, 0.2);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(100, 255, 218, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    backface-visibility: visible;
+}
+
+.skill-3d-card:hover {
+    border-color: rgba(100, 255, 218, 0.6);
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(100, 255, 218, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%) scale(1.15);
+    z-index: 10;
+}
+
+.skill-3d-card svg {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+.skill-3d-card:hover svg {
+    transform: scale(1.2) rotate Y(360deg);
+    animation: iconFloat 0.6s ease-in-out;
+}
+
+@keyframes iconFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1.2);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.25);
+    }
+}
+
+.skill-3d-card span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-white);
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.5px;
+}
+
+/* Glow effect for active/front-facing cards */
+.skill-orbit:nth-child(1) .skill-3d-card,
+.skill-orbit:nth-child(2) .skill-3d-card,
+.skill-orbit:nth-child(3) .skill-3d-card {
+    border-color: rgba(100, 255, 218, 0.4);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(100, 255, 218, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-3d-container {
+        min-height: 500px;
+        padding: 3rem 0;
+    }
+
+    .skills-sphere {
+        width: 400px;
+        height: 400px;
+    }
+
+    .skill-orbit {
+        transform:
+            rotateY(calc(var(--i) * 24deg))
+            rotateX(calc(var(--i) * 12deg - 90deg))
+            translateZ(220px);
+    }
+
+    .skill-3d-card {
+        width: 100px;
+        height: 100px;
+        padding: 1rem;
+        gap: 0.6rem;
+    }
+
+    .skill-3d-card svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill-3d-card span {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-3d-container {
+        min-height: 400px;
+        padding: 2rem 0;
+        perspective: 800px;
+    }
+
+    .skills-sphere {
+        width: 300px;
+        height: 300px;
+    }
+
+    .skill-orbit {
+        transform:
+            rotateY(calc(var(--i) * 24deg))
+            rotateX(calc(var(--i) * 12deg - 90deg))
+            translateZ(160px);
+    }
+
+    .skill-3d-card {
+        width: 80px;
+        height: 80px;
+        padding: 0.8rem;
+        gap: 0.4rem;
+        border-radius: 12px;
+    }
+
+    .skill-3d-card svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .skill-3d-card span {
+        font-size: 0.55rem;
+    }
+
+    .skill-3d-card:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+/* Instructions text update */
+.page-header p {
+    font-size: 0.9rem;
+    color: rgba(100, 255, 218, 0.7);
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 0.5rem;
+}
