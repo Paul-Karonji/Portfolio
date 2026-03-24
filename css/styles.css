@@ -279,11 +279,45 @@
         .btn-secondary {
             border-color: var(--highlight-blue);
             color: var(--highlight-blue);
-            margin-left: 1rem;
         }
 
         .btn-secondary:hover {
             box-shadow: 0 0 20px rgba(87, 199, 255, 0.4);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+            max-width: 760px;
+            margin: 2rem 0;
+        }
+
+        .hero-stat {
+            background: rgba(17, 34, 64, 0.85);
+            border: 1px solid rgba(100, 255, 218, 0.12);
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-stat strong {
+            display: block;
+            color: var(--accent-cyan);
+            font-size: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            margin-bottom: 0.35rem;
+        }
+
+        .hero-stat span {
+            color: rgba(230, 241, 255, 0.7);
+            font-size: 0.92rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
         }
 
         /* Section Headers */
@@ -364,13 +398,50 @@
         }
 
         .contact-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.5rem;
+            height: 1.5rem;
+            flex: 0 0 1.5rem;
             font-size: 1.2rem;
             color: var(--accent-cyan);
+        }
+
+        .contact-icon svg,
+        .project-icon svg {
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.85;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .contact-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .project-icon svg {
+            width: 24px;
+            height: 24px;
         }
 
         .info-card p {
             color: rgba(230, 241, 255, 0.7);
             line-height: 1.8;
+        }
+
+        .skills-copy {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .skills-copy p {
+            color: rgba(230, 241, 255, 0.72);
+            line-height: 1.8;
+            margin-top: 1rem;
         }
 
         /* Skills Page */
@@ -494,7 +565,7 @@
         }
 
         .skill-card li::before {
-            content: "▹";
+            content: ">";
             position: absolute;
             left: 0;
             color: var(--accent-cyan);
@@ -524,6 +595,21 @@
             border-color: rgba(100, 255, 218, 0.3);
         }
 
+        .project-header {
+            padding: 1.75rem 2rem 0;
+        }
+
+        .project-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(100, 255, 218, 0.08);
+            border: 1px solid rgba(100, 255, 218, 0.16);
+            color: var(--accent-cyan);
+        }
 
 
         .project-info {
@@ -558,6 +644,14 @@
             line-height: 1.6;
         }
 
+        .project-stack {
+            color: var(--highlight-blue);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.82rem;
+            letter-spacing: 0.04em;
+            margin-bottom: 1rem;
+        }
+
         .project-link {
             display: inline-flex;
             align-items: center;
@@ -574,6 +668,11 @@
         .project-link:hover {
             color: var(--highlight-blue);
             gap: 0.75rem;
+        }
+
+        .project-link-muted {
+            color: rgba(230, 241, 255, 0.55);
+            cursor: default;
         }
 
         /* Experience Page */
@@ -638,7 +737,7 @@
         }
 
         .experience-card li::before {
-            content: "▹";
+            content: ">";
             position: absolute;
             left: 0;
             color: var(--accent-cyan);
@@ -737,12 +836,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
+            min-width: 78px;
             height: 50px;
             background: rgba(100, 255, 218, 0.1);
             border-radius: 8px;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 0.85rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            padding: 0 1rem;
             transition: all 0.3s;
             border: 1px solid rgba(100, 255, 218, 0.2);
         }
@@ -800,6 +902,14 @@
                 text-align: center;
             }
 
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -820,11 +930,6 @@
             .about-grid,
             .contact-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .btn-secondary {
-                margin-left: 0;
-                margin-top: 1rem;
             }
 
             .skill-icons {
@@ -855,3 +960,4 @@
         .glow {
             animation: glow 2s ease-in-out infinite;
         }
+

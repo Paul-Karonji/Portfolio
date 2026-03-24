@@ -92,7 +92,7 @@
 }
 
 .skill-3d-card:hover svg {
-    transform: scale(1.2) rotate Y(360deg);
+    transform: scale(1.2) rotateY(360deg);
     animation: iconFloat 0.6s ease-in-out;
 }
 

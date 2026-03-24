@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Paul Karonji Waithaka - Software Developer</title>
+    <title>Paul Karonji Waithaka | Full-Stack Software Developer</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/skills-3d.css" rel="stylesheet" />
 </head>
@@ -20,13 +20,13 @@
                 <span></span>
             </div>
             <ul class="nav-links" id="navLinks">
-                <li><a onclick="showPage('home')" class="active">home</a></li>
-                <li><a onclick="showPage('about')">about</a></li>
-                <li><a onclick="showPage('skills')">skills</a></li>
-                <li><a onclick="showPage('projects')">projects</a></li>
-                <li><a onclick="showPage('experience')">experience</a></li>
-                <li><a onclick="showPage('education')">education</a></li>
-                <li><a onclick="showPage('contact')">contact</a></li>
+                <li><a href="#" data-page="home" onclick="showPage('home'); return false;" class="active">home</a></li>
+                <li><a href="#" data-page="about" onclick="showPage('about'); return false;">about</a></li>
+                <li><a href="#" data-page="skills" onclick="showPage('skills'); return false;">skills</a></li>
+                <li><a href="#" data-page="projects" onclick="showPage('projects'); return false;">projects</a></li>
+                <li><a href="#" data-page="experience" onclick="showPage('experience'); return false;">experience</a></li>
+                <li><a href="#" data-page="education" onclick="showPage('education'); return false;">education</a></li>
+                <li><a href="#" data-page="contact" onclick="showPage('contact'); return false;">contact</a></li>
             </ul>
         </div>
     </nav>
@@ -40,15 +40,31 @@
                     <h1>Paul Karonji Waithaka</h1>
                     <p class="title">Full-Stack Software Developer</p>
                     <p>
-                        Final-year Software Development student specializing in full-stack development with expertise
-                        in React, Node.js, Python, and Flask. Passionate about creating innovative solutions
-                        and committed to delivering excellence in every project.
+                        Results-driven full-stack developer with 2+ years of professional experience building
+                        production-ready applications across SaaS, e-commerce, and enterprise systems using React,
+                        Next.js, TypeScript, Node.js, Python, and PHP.
                     </p>
-                    <a href="#" class="btn" onclick="showPage('projects')">View My Work</a>
-                    <a href="#" class="btn btn-secondary" onclick="showPage('contact')">Get In Touch</a>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <strong>2+</strong>
+                            <span>years of professional development experience</span>
+                        </div>
+                        <div class="hero-stat">
+                            <strong>10+</strong>
+                            <span>web applications delivered across client and team projects</span>
+                        </div>
+                        <div class="hero-stat">
+                            <strong>98%</strong>
+                            <span>client satisfaction maintained through freelance delivery</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#" class="btn" onclick="showPage('projects'); return false;">View My Work</a>
+                        <a href="Paul-Karonji-Waithaka-Resume.docx" class="btn btn-secondary" download>Download Resume</a>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <img src="images\paul.png" alt="Paul Karonji Waithaka">
+                    <img src="images/paul.png" alt="Paul Karonji Waithaka">
                 </div>
             </div>
         </div>
@@ -59,37 +75,36 @@
         <div class="container">
             <div class="page-header">
                 <h1>About Me</h1>
-                <p>Get to know more about my background and expertise</p>
+                <p>What I build, how I work, and where I can add value</p>
             </div>
             <div class="about-grid">
                 <div class="info-card">
-                    <h3>contact_info</h3>
+                    <h3>Current Focus</h3>
                     <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <span>+254729089168</span>
+                        <span class="contact-icon">01</span>
+                        <span>Remote Software Developer at JHUB Africa, currently building Agrimsaada with React and Node.js.</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">✉️</span>
-                        <span>karonjipaul.w@gmail.com</span>
+                        <span class="contact-icon">02</span>
+                        <span>Freelance full-stack developer delivering end-to-end products for clients since 2023.</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">🎓</span>
-                        <span>KCA University</span>
+                        <span class="contact-icon">03</span>
+                        <span>Based in Nairobi and open to junior, internship, contract, and full-time opportunities.</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <span>Nairobi, Kenya</span>
+                        <span class="contact-icon">04</span>
+                        <span>Strongest in React, Next.js, TypeScript, Node.js, PHP, PostgreSQL, Firebase, and API integrations.</span>
                     </div>
                 </div>
                 <div class="info-card">
-                    <h3>professional_summary</h3>
-                    <p>I am a passionate and detail-oriented Full-Stack Software Developer with strong expertise in web
-                        development using React, Node.js, Python, and Flask. With hands-on experience across diverse
-                        projects, I bring a problem-solving mindset, adaptability, and creativity to every role I
-                        undertake.</p>
-                    <p>My goal is to leverage technology to create impactful, user-focused solutions. I thrive in
-                        collaborative environments, enjoy continuous learning, and am eager to contribute my skills in
-                        software engineering to drive organizational success.</p>
+                    <h3>Professional Summary</h3>
+                    <p>Results-driven full-stack software developer with 2+ years of experience building
+                        production-ready web applications. I have shipped 10+ products independently and collaboratively,
+                        spanning SaaS platforms, e-commerce systems, and enterprise workflows.</p>
+                    <p>My work combines strong frontend execution, backend systems thinking, and practical delivery. I
+                        am comfortable owning projects from requirements and architecture through deployment,
+                        integration, and iteration in agile teams.</p>
                 </div>
             </div>
         </div>
@@ -100,7 +115,7 @@
         <div class="container">
             <div class="page-header">
                 <h1>Technical Skills</h1>
-                <p>Drag to rotate • Auto-rotation enabled</p>
+                <p>Production stack, tools, and integrations from recent work</p>
             </div>
             <div class="skills-3d-container">
                 <div class="skills-sphere" id="skillsSphere">
@@ -228,15 +243,15 @@
                         </div>
                     </div>
 
-                    <!-- Skill 9: Flask -->
+                    <!-- Skill 9: Next.js -->
                     <div class="skill-orbit" style="--i: 8;">
                         <div class="skill-3d-card">
-                            <svg viewBox="0 0 128 128">
-                                <path fill="#000"
-                                    d="M88.33 28.09l-21.82 87.46 36.57-87.46h18.86L85.87 128H75.62L56.19 51.3 36.77 128H26.49L.42 28.09h19.03l21.82 87.46L77.84 28.09z">
-                                </path>
+                            <svg viewBox="0 0 128 128" aria-hidden="true">
+                                <circle cx="64" cy="64" r="56" fill="#111827"></circle>
+                                <text x="64" y="79" fill="#ffffff" font-family="Arial, sans-serif" font-size="42"
+                                    font-weight="700" text-anchor="middle">N</text>
                             </svg>
-                            <span>Flask</span>
+                            <span>Next.js</span>
                         </div>
                     </div>
 
@@ -255,15 +270,15 @@
                         </div>
                     </div>
 
-                    <!-- Skill 11: MongoDB -->
+                    <!-- Skill 11: MySQL -->
                     <div class="skill-orbit" style="--i: 10;">
                         <div class="skill-3d-card">
-                            <svg viewBox="0 0 128 128">
-                                <path fill="#599636"
-                                    d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.752-.269-1.082-.086-3.767 1.988-4.516 2.193-7.527 2.957-.769.192-1.902.599 1.105 1.742l14.756 8.659c2.725 1.526 5.923 1.526 8.658 0l43.882-25.576c2.847-1.66 4.957-4.764 4.957-8.083V38.407c0-3.319-2.197-6.423-5.051-8.073z">
-                                </path>
+                            <svg viewBox="0 0 128 128" aria-hidden="true">
+                                <rect x="18" y="24" width="92" height="80" rx="20" fill="#00546B"></rect>
+                                <text x="64" y="76" fill="#ffffff" font-family="Arial, sans-serif" font-size="28"
+                                    font-weight="700" text-anchor="middle">SQL</text>
                             </svg>
-                            <span>MongoDB</span>
+                            <span>MySQL</span>
                         </div>
                     </div>
 
@@ -279,25 +294,15 @@
                         </div>
                     </div>
 
-                    <!-- Skill 13: Figma -->
+                    <!-- Skill 13: PHP -->
                     <div class="skill-orbit" style="--i: 12;">
                         <div class="skill-3d-card">
-                            <svg viewBox="0 0 128 128">
-                                <path fill="#0ACF83"
-                                    d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0-86H67v21.5H45.5C33.6 64.5 24 54.9 24 43S33.6 21.5 45.5 21.5zM45.5 0C33.6 0 24 9.6 24 21.5S33.6 43 45.5 43H67V0H45.5z">
-                                </path>
-                                <path fill="#A259FF" d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67V0z">
-                                </path>
-                                <path fill="#F24E1E"
-                                    d="M67 21.5h21.5c11.9 0 21.5 9.6 21.5 21.5s-9.6 21.5-21.5 21.5H67V21.5z"></path>
-                                <path fill="#FF7262"
-                                    d="M67 64.5h21.5C100.4 64.5 110 74.1 110 86s-9.6 21.5-21.5 21.5S67 97.9 67 86V64.5z">
-                                </path>
-                                <path fill="#1ABCFE"
-                                    d="M24 86c0-11.9 9.6-21.5 21.5-21.5S67 74.1 67 86s-9.6 21.5-21.5 21.5S24 97.9 24 86z">
-                                </path>
+                            <svg viewBox="0 0 128 128" aria-hidden="true">
+                                <rect x="16" y="30" width="96" height="68" rx="34" fill="#777BB4"></rect>
+                                <text x="64" y="76" fill="#ffffff" font-family="Arial, sans-serif" font-size="28"
+                                    font-weight="700" text-anchor="middle">PHP</text>
                             </svg>
-                            <span>Figma</span>
+                            <span>PHP</span>
                         </div>
                     </div>
 
@@ -316,18 +321,27 @@
                         </div>
                     </div>
 
-                    <!-- Skill 15: Vercel -->
+                    <!-- Skill 15: Firebase -->
                     <div class="skill-orbit" style="--i: 14;">
                         <div class="skill-3d-card">
-                            <svg viewBox="0 0 128 128">
-                                <path d="M64 0L6.4 19.2v51.2L64 128l57.6-57.6V19.2z" fill="#000"></path>
-                                <path d="M64 25.6L25.6 44.8v38.4L64 102.4l38.4-19.2V44.8z" fill="#fff"></path>
+                            <svg viewBox="0 0 128 128" aria-hidden="true">
+                                <polygon points="64,16 104,90 64,112 24,90" fill="#FFA000"></polygon>
+                                <polygon points="64,16 84,68 64,112 44,68" fill="#FFCA28"></polygon>
+                                <text x="64" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="28"
+                                    font-weight="700" text-anchor="middle">F</text>
                             </svg>
-                            <span>Vercel</span>
+                            <span>Firebase</span>
                         </div>
                     </div>
 
                 </div>
+            </div>
+            <div class="skills-copy">
+                <p>Core stack: React, Next.js, TypeScript, JavaScript, Node.js, Express, PHP, Python, PostgreSQL,
+                    MySQL, Firebase, Docker, Git/GitHub, Figma, and Vercel.</p>
+                <p>Integrations and practices: Google Calendar API, OAuth2, M-Pesa, third-party APIs, responsive
+                    design, PWA development, code review, agile delivery, quality assurance, and technical
+                    documentation.</p>
             </div>
         </div>
     </div>
@@ -335,246 +349,307 @@
     <div id="projects" class="page">
         <div class="container">
             <div class="page-header">
-                <h1>My Projects</h1>
-                <p>Showcasing my work in web development and software engineering</p>
+                <h1>Selected Projects</h1>
+                <p>Recent SaaS, marketplace, enterprise, and product delivery work</p>
             </div>
             <div class="projects-grid">
-                <!-- New Professional Projects -->
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-icon">🚀</span>
+                        <span class="project-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M3 11.5 12 4l9 7.5"></path>
+                                <path d="M5.5 10.5V20h13V10.5"></path>
+                                <path d="M10 20v-5h4v5"></path>
+                            </svg>
+                        </span>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">professional</span>
+                        <span class="project-tag">featured</span>
+                        <h3>MtaaKeys</h3>
+                        <p class="project-stack">Next.js 16 | Express 5 | TypeScript | PostgreSQL | Prisma</p>
+                        <p>SEO-optimized property marketplace with real-time messaging, multi-role access, Paystack subscriptions, Africa's Talking SMS, Cloudinary media handling, and CI security invariant testing.</p>
+                        <a href="https://mtaa-keys.vercel.app/" target="_blank" rel="noreferrer" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 19.5h16"></path>
+                                <path d="M7 16v-4"></path>
+                                <path d="M12 16v-8"></path>
+                                <path d="M17 16v-6"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">featured</span>
+                        <h3>K-Track</h3>
+                        <p class="project-stack">React | Node.js | Cloudflare R2 | Paystack</p>
+                        <p>Advanced SaaS task and commission platform with per-task chat, file sharing, milestone billing, anti-tampering payment validation, and an executive analytics dashboard.</p>
+                        <a href="https://ktrack.vercel.app/" target="_blank" rel="noreferrer" class="project-link">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 4 5 8l7 4 7-4-7-4Z"></path>
+                                <path d="M5 12l7 4 7-4"></path>
+                                <path d="M5 16l7 4 7-4"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">leadership</span>
                         <h3>JHUB Africa Innovations Platform</h3>
-                        <p>Comprehensive innovation platform transforming ideas into market-ready solutions. Features
-                            expert mentorship, structured frameworks, resource library, and investor networking for
-                            African innovators.</p>
-                        <a href="https://www.innovations.jhubafrica.com/" target="_blank" class="project-link">View
-                            Project ?</a>
+                        <p class="project-stack">PHP | MySQL | JavaScript | Docker</p>
+                        <p>Led the development team and architected a platform for African innovators with mentorship matching, resource discovery, investor networking, secure authentication, and frontend review guidance.</p>
+                        <a href="https://www.innovations.jhubafrica.com/" target="_blank" rel="noreferrer" class="project-link">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-icon">✅</span>
+                        <span class="project-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7 3.5v3"></path>
+                                <path d="M17 3.5v3"></path>
+                                <rect x="4" y="6.5" width="16" height="13" rx="2"></rect>
+                                <path d="M4 10.5h16"></path>
+                                <path d="m9.5 15 1.8 1.8 3.7-3.8"></path>
+                            </svg>
+                        </span>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">professional</span>
-                        <h3>DueSync - Task Management</h3>
-                        <p>Intelligent task management with Google Calendar integration. Features smart prioritization,
-                            Pomodoro focus mode, automated reminders, recurring tasks, and progress tracking.</p>
-                        <a href="https://duesync.wiktechnologies.com/" target="_blank" class="project-link">View Project
-                            ?</a>
+                        <span class="project-tag">saas</span>
+                        <h3>DueSync</h3>
+                        <p class="project-stack">Next.js | TypeScript | PostgreSQL | Prisma | Google Calendar API</p>
+                        <p>Intelligent task management platform with Google Calendar OAuth synchronization, smart prioritization, productivity analytics, offline-ready PWA support, and automated notifications.</p>
+                        <a href="https://duesync.wiktechnologies.com/" target="_blank" rel="noreferrer" class="project-link">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-icon">🌸</span>
+                        <span class="project-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 8h12l-1 11H7L6 8Z"></path>
+                                <path d="M9 8V7a3 3 0 0 1 6 0v1"></path>
+                                <path d="M9 11a3 3 0 0 0 6 0"></path>
+                            </svg>
+                        </span>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">professional</span>
-                        <h3>Framel - Flower Delivery</h3>
-                        <p>Full-stack e-commerce platform for fresh flower delivery in Nairobi. Features M-Pesa payment
-                            integration, same-day delivery, product categories, and secure user authentication.</p>
-                        <a href="https://framel.vercel.app/" target="_blank" class="project-link">View Project ?</a>
-                    </div>
-                </div>
-
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">🏥</span>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">solo_project</span>
-                        <h3>Kenya Hospital Management System</h3>
-                        <p>A comprehensive hospital management system for Kenyan healthcare facilities, featuring
-                            patient registration, appointment scheduling, staff management, and basic reporting.</p>
-                        <a href="https://paul-karonji.github.io/kenya_Hospital_Management/" target="_blank"
-                            class="project-link">View Project →</a>
+                        <span class="project-tag">commerce</span>
+                        <h3>Framel</h3>
+                        <p class="project-stack">React | TypeScript | Firebase Firestore | M-Pesa</p>
+                        <p>Flower delivery platform with secure mobile money payments, inventory and order management, same-day delivery scheduling, advanced search, and account-based order tracking.</p>
+                        <a href="https://framel.vercel.app/" target="_blank" rel="noreferrer" class="project-link">View Project</a>
                     </div>
                 </div>
 
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-icon">📋</span>
+                        <span class="project-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M5 20V6.5A1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5V20"></path>
+                                <path d="M9 20v-4h6v4"></path>
+                                <path d="M12 8v5"></path>
+                                <path d="M9.5 10.5h5"></path>
+                            </svg>
+                        </span>
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">solo_project</span>
-                        <h3>Client Task Tracker</h3>
-                        <p>A lightweight task management application for creating, assigning, and tracking client tasks.
-                            Built with React and modern JavaScript for efficient project management.</p>
-                        <a href="#" class="project-link" style="opacity: 0.5; cursor: default;">Coming Soon</a>
+                        <span class="project-tag">enterprise</span>
+                        <h3>Brixton Makunga HMS</h3>
+                        <p class="project-stack">Laravel 12 | React 19 | REST API | Sanctum</p>
+                        <p>Enterprise hospital management system covering patient care, pharmacy, laboratory, billing, and inventory, backed by 200+ API endpoints, FEFO batch tracking, queue management, and automated billing workflows.</p>
+                        <span class="project-link project-link-muted">Private Enterprise Build</span>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-info">
-                        <span class="project-tag">solo_project</span>
-                        <h3>Bags with Mulan</h3>
-                        <p>An e-commerce platform showcasing stylish bags and accessories. Features responsive design,
-                            product catalog, and smooth user experience.</p>
-                        <a href="https://paul-karonji.github.io/Bags/" target="_blank" class="project-link">View Project
-                            →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-info">
-                        <span class="project-tag">collaborative</span>
-                        <h3>La Safari Hotel Booking</h3>
-                        <p>Contributed to a hotel booking web application with user-friendly interface for reservations
-                            and management. Deployed using Vercel platform.</p>
-                        <a href="https://la-safari-hotel-booking.vercel.app/" target="_blank" class="project-link">View
-                            Project →</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-info">
-                        <span class="project-tag">collaborative</span>
-                        <h3>Mviringo Africa Website</h3>
-                        <p>Designed and developed organizational website for Mviringo Africa with professional web
-                            presence and excellent user experience.</p>
-                        <a href="https://www.mviringoafrica.org/" target="_blank" class="project-link">View Project
-                            →</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-
     <!-- Experience Page -->
     <div id="experience" class="page">
         <div class="container">
             <div class="page-header">
                 <h1>Work Experience</h1>
-                <p>My professional journey and contributions</p>
+                <p>Contract, freelance, and attachment experience across product delivery</p>
             </div>
             <div class="experience-card">
                 <div class="experience-header">
                     <div>
-                        <div class="experience-title">Software Development Attachee</div>
-                        <div class="experience-company">JHUB Africa</div>
+                        <div class="experience-title">Remote Software Developer (Contract Project)</div>
+                        <div class="experience-company">JHUB Africa | Nairobi, Kenya (Remote)</div>
                     </div>
-                    <div class="experience-date">Sept 2024 - Present</div>
+                    <div class="experience-date">December 2025 - Present</div>
                 </div>
                 <ul>
-                    <li>Developing and maintaining web applications using modern JavaScript frameworks</li>
-                    <li>Collaborating with cross-functional teams on software development projects</li>
-                    <li>Implementing responsive designs and ensuring optimal user experience</li>
-                    <li>Participating in code reviews and contributing to best practices</li>
-                    <li>Working with version control systems and agile methodologies</li>
+                    <li>Developing the Agrimsaada agricultural management platform using React and Node.js.</li>
+                    <li>Shipping production features for crop tracking, resource management, and analytics.</li>
+                    <li>Collaborating remotely with cross-functional teams using agile development practices.</li>
+                    <li>Managing delivery timelines for a live agricultural technology solution.</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Freelance Software Developer</div>
+                        <div class="experience-company">Independent Contractor | Nairobi, Kenya</div>
+                    </div>
+                    <div class="experience-date">2023 - Present</div>
+                </div>
+                <ul>
+                    <li>Developed and deployed 10+ web applications for diverse clients using React, TypeScript, and Python.</li>
+                    <li>Delivered projects end-to-end from requirements analysis through deployment and maintenance.</li>
+                    <li>Maintained a 98% client satisfaction rate through strong communication and quality execution.</li>
+                    <li>Built responsive interfaces that consistently achieved 90+ PageSpeed Insights scores.</li>
+                    <li>Managed multiple concurrent projects with zero missed deadlines.</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <div class="experience-title">Industrial Attachment - Software Development</div>
+                        <div class="experience-company">JHUB Africa | Nairobi, Kenya</div>
+                    </div>
+                    <div class="experience-date">September 2025 - December 2025</div>
+                </div>
+                <ul>
+                    <li>Completed a 3-month industrial attachment as part of my Bachelor's degree requirement.</li>
+                    <li>Served as technical lead for the JHUB Africa Innovations Platform.</li>
+                    <li>Led development direction for features serving the African entrepreneur community.</li>
+                    <li>Built full-stack applications using React, Node.js, and PostgreSQL.</li>
+                    <li>Participated in code reviews and established development best practices.</li>
                 </ul>
             </div>
         </div>
     </div>
-
     <!-- Education Page -->
     <div id="education" class="page">
         <div class="container">
             <div class="page-header">
                 <h1>Education</h1>
-                <p>My academic background and qualifications</p>
+                <p>Academic foundation, relevant coursework, and certifications</p>
             </div>
             <div class="education-card">
-                <div class="education-degree">Bachelor's in Software Development</div>
+                <div class="education-degree">Bachelor of Science in Software Development</div>
                 <div class="education-school">KCA University</div>
-                <p>Strong foundation in software development and full-stack engineering. Comprehensive coursework in
-                    programming, database management, web technologies, and software engineering principles.</p>
-                <div class="education-status">2021 - 2026 | Graduating 2026</div>
+                <p>Expected graduation: June 2026. Coursework includes advanced web development, data structures and algorithms, database management systems, network security and infrastructure, software engineering principles, system integration, mobile application development, object-oriented programming, and agile project management.</p>
+                <p>Certifications: Cybersecurity Fundamentals (IBM SkillsBuild, 2025) and Data Protection Basics (Atingi eLearning Platform, September 2025).</p>
+                <div class="education-status">September 2021 - June 2026</div>
             </div>
         </div>
     </div>
-
     <!-- Contact Page -->
     <div id="contact" class="page">
         <div class="container">
             <div class="page-header">
                 <h1>Get In Touch</h1>
-                <p>Let's connect and discuss opportunities</p>
+                <p>Open to junior, internship, contract, and full-time opportunities</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>contact_information</h3>
+                    <h3>Contact Information</h3>
                     <div class="contact-item">
-                        <span class="contact-icon">📱</span>
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6.5 4.5h3l1.5 4-2 1.8a15 15 0 0 0 4.8 4.8l1.7-2 4 1.5v3a2 2 0 0 1-2.2 2c-6.7-.5-12.1-5.9-12.6-12.6a2 2 0 0 1 1.8-2.2Z"></path>
+                            </svg>
+                        </span>
                         <span>+254729089168</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">✉️</span>
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="4" y="6" width="16" height="12" rx="2"></rect>
+                                <path d="m5 8 7 5 7-5"></path>
+                            </svg>
+                        </span>
                         <span>karonjipaul.w@gmail.com</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 20s6-5.4 6-10a6 6 0 1 0-12 0c0 4.6 6 10 6 10Z"></path>
+                                <circle cx="12" cy="10" r="2.5"></circle>
+                            </svg>
+                        </span>
                         <span>Nairobi, Kenya</span>
                     </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m8 9-3 3 3 3"></path>
+                                <path d="m16 9 3 3-3 3"></path>
+                                <path d="m14 7-4 10"></path>
+                            </svg>
+                        </span>
+                        <span>github.com/Paul-Karonji</span>
+                    </div>
                     <div class="social-links">
-                        <a href="tel:+254729089168" class="social-link" title="Phone">📱</a>
-                        <a href="mailto:karonjipaul.w@gmail.com" class="social-link" title="Email">✉️</a>
-                        <a href="https://github.com/Paul-Karonji" target="_blank" class="social-link"
-                            title="GitHub">💻</a>
-                        <a href="#" class="social-link" title="LinkedIn">💼</a>
+                        <a href="tel:+254729089168" class="social-link" title="Phone">Call</a>
+                        <a href="mailto:karonjipaul.w@gmail.com" class="social-link" title="Email">Email</a>
+                        <a href="https://github.com/Paul-Karonji" target="_blank" rel="noreferrer" class="social-link" title="GitHub">GitHub</a>
+                        <a href="Paul-Karonji-Waithaka-Resume.docx" class="social-link" title="Resume" download>Resume</a>
                     </div>
                 </div>
                 <div class="contact-info">
-                    <h3>open_to_opportunities</h3>
-                    <p>I'm actively seeking opportunities in:</p>
+                    <h3>Opportunity Focus</h3>
+                    <p>I'm actively looking for roles where I can contribute across product delivery, engineering execution, and integrations:</p>
                     <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-                        <li
-                            style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
-                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">▹</span>
-                            Software Development
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
+                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">&gt;</span>
+                            Junior Developer roles
                         </li>
-                        <li
-                            style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
-                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">▹</span>
-                            Full-Stack Development
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
+                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">&gt;</span>
+                            Software engineering internships
                         </li>
-                        <li
-                            style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
-                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">▹</span>
-                            Backend Development
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
+                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">&gt;</span>
+                            Full-stack and backend product teams
                         </li>
-                        <li
-                            style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
-                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">▹</span>
-                            Frontend Development
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative; color: rgba(230, 241, 255, 0.7);">
+                            <span style="position: absolute; left: 0; color: var(--accent-cyan);">&gt;</span>
+                            Nairobi, remote, hybrid, or relocation-friendly opportunities
                         </li>
                     </ul>
-                    <p style="margin-top: 1.5rem;">Feel free to reach out for collaborations, projects, or just a
-                        friendly chat about technology!</p>
+                    <p style="margin-top: 1.5rem;">If you need someone who can move from interfaces into APIs, integrations, and production delivery, reach out.</p>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Footer -->
     <footer>
-        <p>© 2025 Paul Karonji Waithaka. All rights reserved.</p>
-        <p style="margin-top: 0.5rem;">Designed with passion for innovation</p>
+        <p>&copy; 2026 Paul Karonji Waithaka. All rights reserved.</p>
+        <p style="margin-top: 0.5rem;">Built to showcase shipped product work and practical engineering.</p>
     </footer>
 
     <script>
         function showPage(pageId) {
-            // Hide all pages
             const pages = document.querySelectorAll('.page');
             pages.forEach(page => page.classList.remove('active'));
 
-            // Show selected page
-            document.getElementById(pageId).classList.add('active');
+            const selectedPage = document.getElementById(pageId);
+            if (selectedPage) {
+                selectedPage.classList.add('active');
+            }
 
-            // Update active nav link
             const navLinks = document.querySelectorAll('.nav-links a');
             navLinks.forEach(link => link.classList.remove('active'));
-            event.target.classList.add('active');
 
-            // Close mobile menu
+            const activeLink = document.querySelector('.nav-links a[data-page="' + pageId + '"]');
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+
             document.getElementById('navLinks').classList.remove('active');
-
-            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
@@ -582,10 +657,8 @@
             document.getElementById('navLinks').classList.toggle('active');
         }
 
-        // Close menu when clicking outside
         document.addEventListener('click', function (event) {
             const nav = document.querySelector('nav');
-            const menuToggle = document.querySelector('.menu-toggle');
             const navLinks = document.getElementById('navLinks');
 
             if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
@@ -593,7 +666,6 @@
             }
         });
 
-        // Add typing effect to hero greeting
         const greeting = document.querySelector('.hero-greeting');
         if (greeting) {
             const text = greeting.textContent;
@@ -612,7 +684,7 @@
         }
 
         console.log('%c> Portfolio loaded successfully!', 'color: #64FFDA; font-family: JetBrains Mono; font-size: 14px;');
-        console.log('%c> Made with passion by Paul Karonji', 'color: #57C7FF; font-family: JetBrains Mono; font-size: 12px;');
+        console.log('%c> Built from current resume content', 'color: #57C7FF; font-family: JetBrains Mono; font-size: 12px;');
     </script>
     <script src="js/skills-3d.js"></script>
 </body>
