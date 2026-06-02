@@ -1,30 +1,30 @@
-
 # Paul Portfolio
 
-A modern, responsive portfolio website featuring an interactive 3D skills display.
+A responsive single-page portfolio for Paul Karonji Waithaka, aligned with the current resume and focused on full-stack engineering, systems architecture, WIK Technologies, and production software projects.
 
 ## Structure
 
-```
+```text
 paul_portfolio/
-├── index.html          # Main portfolio page
-├── css/
-│   ├── styles.css      # Main stylesheets 
-│   └── skills-3d.css   # 3D skills sphere styles
-├── js/
-│   ├── main.js         # Main JavaScript functionality
-│   └── skills-3d.js    # 3D skills sphere interactions
-├── images/
-│   └── paul.png        # Profile image
-└── README.md
+|-- index.html                         # Main portfolio page
+|-- Paul-Karonji-Waithaka-Resume.docx  # Downloadable resume
+|-- css/
+|   `-- styles.css                     # Main stylesheet
+|-- js/
+|   `-- main.js                        # Navigation interactions
+|-- images/
+|   |-- paul-hero.png
+|   |-- paul.png
+|   `-- paul-portrait.jpg
+`-- README.md
 ```
 
 ## Features
 
-- Interactive 3D rotating skills sphere
-- Responsive design for all devices
-- Single-page application with smooth navigation
-- Modern UI with animations and transitions
+- Resume-aligned hero, experience, projects, skills, education, and contact sections
+- Selected production projects across SaaS, enterprise, mobile, desktop, and AI
+- Responsive design for mobile and desktop
+- Smooth single-page navigation
 
 ## Local Preview
 

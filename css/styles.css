@@ -314,9 +314,9 @@ select {
 }
 
 .portrait-frame img {
+    display: block;
     width: 100%;
-    aspect-ratio: 4 / 4.85;
-    object-fit: cover;
+    height: auto;
     object-position: center;
     filter: saturate(0.92) contrast(1.03);
 }
