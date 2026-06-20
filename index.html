@@ -65,7 +65,7 @@
                     </div>
                     <div>
                         <dt>Core stack</dt>
-                        <dd>Next.js, React, Node.js, Laravel, PostgreSQL, Electron</dd>
+                        <dd>Next.js, React, TypeScript, Node.js, PostgreSQL, Electron</dd>
                     </div>
                 </dl>
             </aside>
@@ -130,144 +130,274 @@
             <div class="section-heading">
                 <p class="section-kicker">Selected projects</p>
                 <h2 id="projects-title">Production systems across SaaS, enterprise, mobile, desktop, and AI.</h2>
+                <div class="project-viewbar" aria-label="Project category">
+                    <button class="project-view-button is-active" type="button" data-project-target="professional"
+                        aria-pressed="true">Professional</button>
+                    <button class="project-view-button" type="button" data-project-target="labs"
+                        aria-pressed="false">Personal / labs</button>
+                </div>
             </div>
 
-            <div class="featured-projects">
-                <article class="project-card project-card-large">
-                    <div class="project-meta">
-                        <span>Featured desktop product</span>
-                        <span>My role: founder &amp; lead engineer</span>
-                    </div>
-                    <h3>WIK-POS Premium</h3>
-                    <p>
-                        An enterprise point-of-sale system for live retail clients, built around offline-first sales,
-                        hardware-bound licensing, customer loyalty, WhatsApp receipts, and reorder logistics.
-                    </p>
-                    <ul class="project-points">
-                        <li>Built with Electron, React, TypeScript, SQLite, and JWT licensing.</li>
-                        <li>Includes offline grace periods, CRM flows, and a centralized license server.</li>
-                    </ul>
-                    <span class="project-link project-link-muted">Private retail product</span>
-                </article>
+            <div class="project-panel is-active" data-project-view="professional">
+                <div class="featured-projects">
+                    <article class="project-card project-card-large">
+                        <div class="project-meta">
+                            <span>Featured desktop product</span>
+                            <span>My role: founder &amp; lead engineer</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Electron, electron-vite, React 19,
+                            TypeScript, better-sqlite3, Drizzle ORM, JWT, electron-builder</p>
+                        <h3>WIK-POS Premium</h3>
+                        <p>
+                            An enterprise point-of-sale system for live retail clients, built around offline-first sales,
+                            hardware-bound licensing, customer loyalty, WhatsApp receipts, and reorder logistics.
+                        </p>
+                        <ul class="project-points">
+                            <li>Built with Electron, React, TypeScript, SQLite, and JWT licensing.</li>
+                            <li>Includes offline grace periods, CRM flows, and a centralized license server.</li>
+                        </ul>
+                        <span class="project-link project-link-muted">Private retail product</span>
+                    </article>
 
-                <article class="project-card project-card-large project-card-accent">
-                    <div class="project-meta">
-                        <span>Featured marketplace</span>
-                        <span>My role: full-stack architecture</span>
-                    </div>
-                    <h3>MtaaKeys</h3>
-                    <p>
-                        A full-stack property marketplace and rental management platform combining public listings,
-                        agent subscriptions, land-agent tiers, listing boosts, messaging, audit trails, and security
-                        hardening.
-                    </p>
-                    <ul class="project-points">
-                        <li>Built with Next.js 16, Express 5, TypeScript, PostgreSQL, Prisma, and Socket.IO.</li>
-                        <li>Integrated Paystack, Africa's Talking, Cloudinary, Resend, and CI security tests.</li>
-                    </ul>
-                    <a class="project-link" href="https://mtaakeys.com/" target="_blank"
-                        rel="noreferrer">View website</a>
-                </article>
+                    <article class="project-card project-card-large project-card-accent">
+                        <div class="project-meta">
+                            <span>Featured marketplace</span>
+                            <span>My role: full-stack architecture</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Next.js 16, React 19, Express 5,
+                            TypeScript, PostgreSQL, Prisma, Socket.IO, Paystack, Cloudinary</p>
+                        <h3>MtaaKeys</h3>
+                        <p>
+                            A full-stack property marketplace and rental management platform combining public listings,
+                            rental workflows, agent subscriptions, land-agent tiers, listing boosts, messaging, audit
+                            trails, and security hardening.
+                        </p>
+                        <ul class="project-points">
+                            <li>Built with Next.js 16, Express 5, TypeScript, PostgreSQL, Prisma, and Socket.IO.</li>
+                            <li>Integrated Paystack, Africa's Talking, Cloudinary, Resend, and CI security tests.</li>
+                        </ul>
+                        <a class="project-link" href="https://mtaakeys.com/" target="_blank"
+                            rel="noreferrer">View website</a>
+                    </article>
+                </div>
+
+                <div class="supporting-projects" aria-label="Professional projects">
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>AI agent</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> TypeScript, Express 5, Vercel AI SDK,
+                            OpenRouter, Pinecone, PostgreSQL, better-sqlite3, MCP SDK, WebSockets</p>
+                        <h3>Hiro</h3>
+                        <p>A self-hosted AI agent with multi-model workflows, document ingestion, web search,
+                            memory-backed conversations, voice input/output, and a dynamic skills system.</p>
+                        <span class="project-link project-link-muted">Self-hosted private system</span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Operations platform</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Turborepo, NestJS 10, Next.js 14,
+                            TypeScript, Prisma, AWS S3 SDK, Resend, ExcelJS, React PDF</p>
+                        <h3>Logit</h3>
+                        <p>A logistics operations platform for Juba Errands with office waybill booking, transporter
+                            checkpoint updates, public parcel tracking, audit logs, payment recording, label printing,
+                            and legacy Excel import.</p>
+                        <a class="project-link" href="https://logit-api.vercel.app/" target="_blank"
+                            rel="noreferrer">View project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Company website</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> HTML, CSS, JavaScript, Netlify Functions,
+                            Hiro knowledge build, Cheerio, Sharp image optimization</p>
+                        <h3>WIK Technologies</h3>
+                        <p>The company website for WIK Technologies, built with a custom Hiro-powered AI chatbot,
+                            service pages, optimized assets, and Netlify Functions for the assistant experience.</p>
+                        <a class="project-link" href="https://wiktechnologies.com/" target="_blank"
+                            rel="noreferrer">View website</a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Productivity SaaS</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Next.js 15, React 18, Prisma, NextAuth,
+                            Google APIs, Resend, web-push, Upstash Redis, MCP SDK</p>
+                        <h3>DueSync</h3>
+                        <p>A smart task management PWA and Android app with two-way Google Calendar sync, Pomodoro mode,
+                            recurring tasks, push/email reminders, Vercel Cron, and an MCP server for AI agents.</p>
+                        <a class="project-link" href="https://duesync.wiktechnologies.com/" target="_blank"
+                            rel="noreferrer">View project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Commission SaaS</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> React 19, Vite, Tailwind CSS, Node.js,
+                            Express 5, Socket.IO, MySQL/TiDB, Cloudflare R2, Paystack, Resend</p>
+                        <h3>K-Track</h3>
+                        <p>A multi-tutor agency platform with task pooling, per-task chat, Cloudflare R2 delivery,
+                            Paystack payments, USD to KES conversion, and secure guest checkout URLs.</p>
+                        <a class="project-link" href="https://ktrack.vercel.app/" target="_blank" rel="noreferrer">View
+                            project</a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Enterprise</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Laravel, PHP, MySQL, REST APIs, pharmacy
+                            inventory, billing workflows</p>
+                        <h3>Brixton Makunga HMS</h3>
+                        <p>A hospital management system covering patient care, pharmacy, lab work, billing, inventory,
+                            200+ API endpoints, FEFO batch tracking, and queue workflows.</p>
+                        <a class="project-link" href="https://hmisdemo.wiktechnologies.com/" target="_blank"
+                            rel="noreferrer">View demo</a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Mobile fintech</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Expo SDK 54, React Native 0.81, Kotlin,
+                            React Navigation, Zustand, Expo SQLite, Supabase, Vercel Cron, Expo Push + FCM V1</p>
+                        <h3>wiktrack</h3>
+                        <p>An M-Pesa income tracker built with React Native, Expo, Kotlin, Supabase, Firebase FCM, local
+                            SQLite storage, SMS parsing, and background sync.</p>
+                        <span class="project-link project-link-muted">Mobile product</span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Leadership</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> PHP 8.1, Apache, MySQL 8, Docker,
+                            Composer, PHPMailer, PDO MySQL, Apache rewrite modules</p>
+                        <h3>JHUB Africa Innovation Tracker</h3>
+                        <p>A project management platform for JHUB with four user roles, six-stage lifecycle tracking,
+                            mentor assignment, document management, investor browsing, and audit logs.</p>
+                        <a class="project-link" href="https://innovation.jhubafrica.com/" target="_blank"
+                            rel="noreferrer">View project</a>
+                    </article>
+                </div>
             </div>
 
-            <div class="supporting-projects" aria-label="Additional projects">
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>AI agent</span>
-                    </div>
-                    <h3>Hiro</h3>
-                    <p>A self-hosted AI agent with multi-model workflows, document ingestion, web search, memory-backed
-                        conversations, voice input/output, and a dynamic skills system.</p>
-                    <span class="project-link project-link-muted">Self-hosted private system</span>
-                </article>
+            <div class="project-panel" data-project-view="labs" hidden>
+                <div class="featured-projects">
+                    <article class="project-card project-card-large">
+                        <div class="project-meta">
+                            <span>Personal product</span>
+                            <span>Offline-first PWA</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Vite, React 19, Supabase JS, idb-keyval,
+                            Vite PWA, JSZip, React Idle Timer, Lucide React</p>
+                        <h3>Unsent</h3>
+                        <p>
+                            A private diary PWA shaped around privacy, offline use, and long-form capture, with local
+                            caching, Supabase RLS, auto-lock, voice dictation, media attachments, calendar views, and
+                            ZIP export.
+                        </p>
+                        <ul class="project-points">
+                            <li>Explores privacy-first UX, IndexedDB caching, and background sync.</li>
+                            <li>Built as a personal product with production-style security patterns.</li>
+                        </ul>
+                        <a class="project-link" href="https://unsent-eosin.vercel.app/" target="_blank"
+                            rel="noreferrer">View project</a>
+                    </article>
 
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Operations platform</span>
-                    </div>
-                    <h3>Logit</h3>
-                    <p>A logistics operations platform for Juba Errands with office waybill booking, transporter
-                        checkpoint updates, public parcel tracking, audit logs, payment recording, label printing, and
-                        legacy Excel import.</p>
-                    <a class="project-link" href="https://logit-api.vercel.app/" target="_blank"
-                        rel="noreferrer">View project</a>
-                </article>
+                    <article class="project-card project-card-large project-card-accent">
+                        <div class="project-meta">
+                            <span>Public GitHub build</span>
+                            <span>Backend + storefront</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Express 4, TypeScript, Firebase Admin,
+                            Cloudinary, Nodemailer, Swagger, Winston, Zod, Helmet, Jest</p>
+                        <h3>Framel</h3>
+                        <p>
+                            A flower-shop commerce platform with Firebase authentication, M-Pesa payments, Cloudinary
+                            image handling, email notifications, Swagger docs, admin workflows, and a tested Express +
+                            TypeScript backend.
+                        </p>
+                        <ul class="project-points">
+                            <li>Includes product, cart, order, payment, review, wishlist, and analytics modules.</li>
+                            <li>Documents 45 passing service tests and production-readiness checks.</li>
+                        </ul>
+                        <a class="project-link" href="https://github.com/Paul-Karonji/framel" target="_blank"
+                            rel="noreferrer">View GitHub</a>
+                    </article>
+                </div>
 
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Company website</span>
-                    </div>
-                    <h3>WIK Technologies</h3>
-                    <p>The company website for WIK Technologies, built with a custom Hiro-powered AI chatbot, service
-                        pages, optimized assets, and Netlify Functions for the assistant experience.</p>
-                    <a class="project-link" href="https://wiktechnologies.com/" target="_blank"
-                        rel="noreferrer">View website</a>
-                </article>
+                <div class="supporting-projects" aria-label="Personal and lab projects">
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Retail prototype</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> HTML5, CSS3, JavaScript, localStorage,
+                            responsive multi-page storefront</p>
+                        <h3>Bags with Mulan</h3>
+                        <p>A luxury bag storefront with multi-page shopping, persistent cart state, Kenyan pricing,
+                            cash-on-delivery checkout, and product imagery for a Nairobi retail brand.</p>
+                        <a class="project-link" href="https://github.com/Paul-Karonji/Bags" target="_blank"
+                            rel="noreferrer">View GitHub</a>
+                    </article>
 
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Productivity SaaS</span>
-                    </div>
-                    <h3>DueSync</h3>
-                    <p>A smart task management PWA and Android app with two-way Google Calendar sync, Pomodoro mode,
-                        recurring tasks, push/email reminders, Vercel Cron, and an MCP server for AI agents.</p>
-                    <a class="project-link" href="https://duesync.wiktechnologies.com/" target="_blank"
-                        rel="noreferrer">View project</a>
-                </article>
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Agritech concept</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Flutter PWA/mobile, Node.js Express or
+                            Django, PostgreSQL/Firebase, Africa's Talking, weather APIs, Google Maps, Redis</p>
+                        <h3>AgriMsaada</h3>
+                        <p>A smart agricultural advisory concept for Kenyan farmers, combining PWA, SMS, and USSD flows
+                            for weather, disease detection, farm tracking, and market guidance.</p>
+                        <a class="project-link" href="https://github.com/Paul-Karonji/agrimsaada" target="_blank"
+                            rel="noreferrer">View GitHub</a>
+                    </article>
 
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Commission SaaS</span>
-                    </div>
-                    <h3>K-Track</h3>
-                    <p>A multi-tutor agency platform with task pooling, per-task chat, Cloudflare R2 delivery,
-                        Paystack payments, USD to KES conversion, and secure guest checkout URLs.</p>
-                    <a class="project-link" href="https://ktrack.vercel.app/" target="_blank" rel="noreferrer">View
-                        project</a>
-                </article>
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Movie app</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Next.js 16, React 19, TypeScript, Prisma,
+                            Supabase JS, Axios, NextAuth, Zustand, Tailwind CSS 4</p>
+                        <h3>Cinetaste</h3>
+                        <p>A public GitHub experiment around entertainment discovery and interface exploration,
+                            useful for showing smaller product thinking outside client and company work.</p>
+                        <a class="project-link" href="https://github.com/Paul-Karonji/cinetaste" target="_blank"
+                            rel="noreferrer">View GitHub</a>
+                    </article>
 
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Enterprise</span>
-                    </div>
-                    <h3>Brixton Makunga HMS</h3>
-                    <p>A hospital management system covering patient care, pharmacy, lab work, billing, inventory,
-                        200+ API endpoints, FEFO batch tracking, and queue workflows.</p>
-                    <a class="project-link" href="https://hmisdemo.wiktechnologies.com/" target="_blank"
-                        rel="noreferrer">View demo</a>
-                </article>
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>API practice</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Node.js, Express 5, Express Handlebars,
+                            SQLite/sqlite3, Jest, Supertest, Nodemon</p>
+                        <h3>Node Recipe App</h3>
+                        <p>A compact Node.js project for recipe-style data handling and backend practice, included as a
+                            smaller public build rather than a flagship production system.</p>
+                        <a class="project-link" href="https://github.com/Paul-Karonji/node-recipe-app" target="_blank"
+                            rel="noreferrer">View GitHub</a>
+                    </article>
 
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Mobile fintech</span>
-                    </div>
-                    <h3>wiktrack</h3>
-                    <p>An M-Pesa income tracker built with React Native, Expo, Kotlin, Supabase, Firebase FCM, local
-                        SQLite storage, SMS parsing, and background sync.</p>
-                    <span class="project-link project-link-muted">Mobile product</span>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Leadership</span>
-                    </div>
-                    <h3>JHUB Africa Innovation Tracker</h3>
-                    <p>A project management platform for JHUB with four user roles, six-stage lifecycle tracking,
-                        mentor assignment, document management, investor browsing, and audit logs.</p>
-                    <a class="project-link" href="https://innovation.jhubafrica.com/" target="_blank"
-                        rel="noreferrer">View project</a>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-meta">
-                        <span>Offline PWA</span>
-                    </div>
-                    <h3>Unsent</h3>
-                    <p>A private diary PWA with IndexedDB caching, background sync, Supabase RLS, auto-lock, voice
-                        dictation, media attachments, calendar views, and ZIP export.</p>
-                    <a class="project-link" href="https://unsent-eosin.vercel.app/" target="_blank"
-                        rel="noreferrer">View project</a>
-                </article>
+                    <article class="project-card">
+                        <div class="project-meta">
+                            <span>Admin tooling</span>
+                        </div>
+                        <p class="project-stack"><strong>Tech stack:</strong> Vanilla HTML5, CSS3, JavaScript, Chart.js,
+                            Google Fonts, POS License Server API</p>
+                        <h3>Remote WIK-POS Dashboard</h3>
+                        <p>A public dashboard companion for remote POS visibility, separate from the private licensed
+                            desktop product and useful as a lighter operational UI sample.</p>
+                        <a class="project-link" href="https://github.com/Paul-Karonji/Remote-wik-pos-dashboard"
+                            target="_blank" rel="noreferrer">View GitHub</a>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -342,8 +472,8 @@
                     </article>
                     <article>
                         <h3>Backend</h3>
-                        <p>Node.js, Express, Laravel 10/12, PHP, Python, Next.js API routes, REST APIs, Socket.IO,
-                            WebSockets, authentication, and role-based access.</p>
+                        <p>Node.js, Express, TypeScript, Prisma, Laravel 10/12, PHP, Python, Next.js API routes, REST
+                            APIs, Socket.IO, WebSockets, authentication, and role-based access.</p>
                     </article>
                     <article>
                         <h3>Data</h3>
@@ -367,8 +497,8 @@
                     </article>
                     <article>
                         <h3>Architecture</h3>
-                        <p>Offline-first systems, multi-tenant SaaS, hardware licensing, monorepos, Observer pattern,
-                            event-driven workflows, and product ecosystem design.</p>
+                        <p>Offline-first systems, property marketplaces, rental workflows, multi-tenant SaaS, hardware
+                            licensing, monorepos, event-driven workflows, and product ecosystem design.</p>
                     </article>
                     <article>
                         <h3>Testing &amp; Docs</h3>

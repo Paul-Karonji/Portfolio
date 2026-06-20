@@ -3,6 +3,8 @@
     const navLinks = document.querySelector("#navLinks");
     const navItems = document.querySelectorAll(".nav-links a");
     const sections = [...document.querySelectorAll("main section[id]")];
+    const projectButtons = document.querySelectorAll("[data-project-target]");
+    const projectPanels = document.querySelectorAll("[data-project-view]");
 
     if (toggle && navLinks) {
         toggle.addEventListener("click", () => {
@@ -45,5 +47,25 @@
         );
 
         sections.forEach((section) => observer.observe(section));
+    }
+
+    if (projectButtons.length && projectPanels.length) {
+        projectButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const target = button.dataset.projectTarget;
+
+                projectButtons.forEach((item) => {
+                    const isActive = item === button;
+                    item.classList.toggle("is-active", isActive);
+                    item.setAttribute("aria-pressed", String(isActive));
+                });
+
+                projectPanels.forEach((panel) => {
+                    const isActive = panel.dataset.projectView === target;
+                    panel.hidden = !isActive;
+                    panel.classList.toggle("is-active", isActive);
+                });
+            });
+        });
     }
 })();
