@@ -7,7 +7,8 @@ A responsive single-page portfolio for Paul Karonji Waithaka, aligned with the c
 ```text
 paul_portfolio/
 |-- index.html                         # Main portfolio page
-|-- Paul-Karonji-Waithaka-Resume.docx  # Downloadable resume
+|-- Paul-Karonji-Waithaka-Resume.pdf   # Downloadable resume (PDF)
+|-- Paul-Karonji-Waithaka-Resume.docx  # Source resume document
 |-- css/
 |   `-- styles.css                     # Main stylesheet
 |-- js/
