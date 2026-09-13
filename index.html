@@ -590,45 +590,177 @@
                 <h2 id="experience-title">Where I have engineered, led, and delivered production software.</h2>
             </div>
 
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div class="timeline-date">October 2025 – Present</div>
-                    <div class="timeline-content">
-                        <h3>Founder &amp; Systems Architect</h3>
-                        <p class="timeline-company">WIK Technologies | Nairobi, Kenya</p>
-                        <ul>
-                            <li>Founded a software company delivering distributed backends, offline-first systems, and cloud SaaS platforms for commercial clients in Kenya and internationally.</li>
-                            <li>Architected <strong>WIK Online Cloud POS (VPS Edition)</strong>: NestJS 11, React 19, PostgreSQL, automated KRA eTIMS fiscal compliance (OSCU/VSCU), real-time M-Pesa STK push &amp; C2B queues, and Paystack recurring SaaS billing.</li>
-                            <li>Engineered <strong>FleetTrack Enterprise</strong>: high-concurrency Go backend for batch IoT telematics ingestion and WebSocket fan-out, paired with an offline-first React Native (Expo 57) driver app with SQLite buffering.</li>
-                            <li>Built <strong>HotBill KE</strong>: automated telecommunications billing daemon integrating the MikroTik RouterOS socket API with M-Pesa Daraja and a Next.js 14 NOC console in Docker Compose.</li>
-                            <li>Developed <strong>Padi Password Manager</strong>: zero-knowledge cross-browser extension (Manifest V3) using client-side Web Crypto PBKDF2 (100,000 iterations) and AES-GCM-256.</li>
-                            <li>Shipped <strong>WIK-POS Desktop Suite</strong>: Electron, SQLite (WAL mode), and central licensing authority with hardware-bound CPU/MAC fingerprinting, FEFO pharmacy expiry batching, and hotel multi-terminal LAN ordering.</li>
-                            <li>Shipped <strong>DueSync</strong>: task-management SaaS on Next.js 15 with two-way Google Calendar OAuth2 sync and a native 13-tool Model Context Protocol (MCP) server for AI agent orchestration.</li>
-                        </ul>
+            <div class="experience-timeline">
+                <!-- Role 1: WIK Technologies -->
+                <article class="experience-station">
+                    <div class="station-meta">
+                        <div class="station-tenure">
+                            <span class="status-indicator"></span>
+                            <span>October 2025 – Present</span>
+                        </div>
+                        <h3 class="station-role">Founder &amp; Systems Architect</h3>
+                        <p class="station-company">WIK Technologies · Nairobi, Kenya</p>
+                        <p class="station-scope">
+                            Founded a software engineering firm architecting high-concurrency backends, offline-first systems, IoT telematics, network billing automation, and cryptographic software for commercial clients.
+                        </p>
+                        <div class="station-tags" aria-label="Core technologies and domains">
+                            <span>Go Telematics</span>
+                            <span>NestJS 11</span>
+                            <span>KRA eTIMS</span>
+                            <span>MikroTik API</span>
+                            <span>Zero-Knowledge</span>
+                            <span>Offline SQLite</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="station-deliverables">
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>WIK Online Cloud POS (VPS Edition)</h4>
+                                <span class="deliverable-stack">NestJS 11 · React 19 · PostgreSQL · KRA eTIMS</span>
+                            </div>
+                            <p>
+                                Automated KRA eTIMS fiscal compliance engine (OSCU/VSCU), real-time M-Pesa STK push and C2B queues, and Paystack recurring subscription guards with suspended walls.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>FleetTrack Enterprise Telematics</h4>
+                                <span class="deliverable-stack">Go · WebSockets · React Native · Expo 57 · SQLite</span>
+                            </div>
+                            <p>
+                                High-concurrency Go backend for batch IoT telematics ingestion and live WebSocket fan-out, paired with an offline-first mobile driver app buffering trips in SQLite during network dead zones.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>HotBill KE Network Automation</h4>
+                                <span class="deliverable-stack">MikroTik API (:8728) · M-Pesa Daraja · Docker Compose</span>
+                            </div>
+                            <p>
+                                Automated telecommunications billing daemon integrating the MikroTik RouterOS socket API with M-Pesa Daraja and Next.js 14 NOC console for automated ISP bandwidth provisioning.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>Padi Zero-Knowledge Crypto</h4>
+                                <span class="deliverable-stack">Manifest V3 · Web Crypto PBKDF2 · AES-GCM-256</span>
+                            </div>
+                            <p>
+                                Zero-knowledge cross-browser extension and web vault using hardware-accelerated PBKDF2 (100,000 iterations) and AES-GCM-256 where master keys and secrets never leave the client.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>WIK-POS Desktop Suite &amp; Licensing</h4>
+                                <span class="deliverable-stack">Electron · SQLite (WAL) · Hardware Cryptography</span>
+                            </div>
+                            <p>
+                                Offline retail suite with CPU/MAC hardware fingerprinting licensing authority, 30-day offline grace periods, FEFO pharmacy expiry batching, and hotel multi-terminal LAN ordering.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>DueSync Task SaaS &amp; MCP Server</h4>
+                                <span class="deliverable-stack">Next.js 15 · Model Context Protocol · Google OAuth2</span>
+                            </div>
+                            <p>
+                                Task management SaaS with bidirectional Google Calendar OAuth2 sync and a native 13-tool Model Context Protocol (MCP) server enabling AI assistants to autonomously orchestrate schedules.
+                            </p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="timeline-item">
-                    <div class="timeline-date">September 2025 – December 2025</div>
-                    <div class="timeline-content">
-                        <h3>Technical Lead (Industrial Attachment)</h3>
-                        <p class="timeline-company">JHUB Africa | Nairobi, Kenya</p>
-                        <ul>
-                            <li>Directed engineering of the <strong>JHUB Africa Innovation Tracker</strong> (PHP 8.1, MySQL, Docker, JavaScript) across 4 user roles, 6 project lifecycle stages, and automated mentor assignment engines.</li>
-                            <li>Established PSR-12 team coding standards, performed rigorous code reviews, and containerized the platform with Docker Compose for production deployment, serving live nationwide innovators and investors.</li>
-                        </ul>
+                <!-- Role 2: JHUB Africa -->
+                <article class="experience-station">
+                    <div class="station-meta">
+                        <div class="station-tenure">
+                            <span>September 2025 – December 2025</span>
+                        </div>
+                        <h3 class="station-role">Technical Lead (Industrial Attachment)</h3>
+                        <p class="station-company">JHUB Africa · Nairobi, Kenya</p>
+                        <p class="station-scope">
+                            Directed engineering of the JKUAT innovation lifecycle platform, establishing engineering standards, code review rigor, and containerized production infrastructure.
+                        </p>
+                        <div class="station-tags" aria-label="Core technologies and domains">
+                            <span>PHP 8.1</span>
+                            <span>MySQL 8</span>
+                            <span>Docker Compose</span>
+                            <span>PSR-12</span>
+                            <span>Architecture &amp; QA</span>
+                        </div>
+                    </div>
+
+                    <div class="station-deliverables">
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>JHUB Africa Innovation Tracker Platform</h4>
+                                <span class="deliverable-stack">PHP 8.1 · MySQL · JavaScript · Docker</span>
+                            </div>
+                            <p>
+                                Architected multi-role project management platform for JKUAT Hub with 4 user portals, 6-stage venture lifecycle tracking, mentor matching, document repository, and audit trails.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>Engineering Rigor &amp; Containerization</h4>
+                                <span class="deliverable-stack">Docker Compose · PSR-12 · Code Reviews</span>
+                            </div>
+                            <p>
+                                Established team coding standards, conducted technical code reviews, and containerized the platform for reliable nationwide deployment to innovators and venture investors.
+                            </p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="timeline-item">
-                    <div class="timeline-date">2023 – Present</div>
-                    <div class="timeline-content">
-                        <h3>Freelance Software Engineer &amp; Systems Consultant</h3>
-                        <p class="timeline-company">Independent Contractor | Remote &amp; Nairobi</p>
-                        <ul>
-                            <li>Delivered 10+ production applications including <strong>MtaaKeys</strong> (property marketplace monorepo on Next.js 16 / Express 5 with dual Paystack tiers), <strong>Brixton Makunga HMS</strong> (200+ endpoint hospital ERP on Laravel 12 / MySQL), and <strong>K-Track</strong> (tutor commission platform with timing-safe HMAC guest checkout).</li>
-                            <li>Maintained 98% client satisfaction through clear architectural communication, production-grade documentation, and robust reliability under real-world operating constraints.</li>
-                        </ul>
+                <!-- Role 3: Freelance / Independent Contractor -->
+                <article class="experience-station">
+                    <div class="station-meta">
+                        <div class="station-tenure">
+                            <span>2023 – Present</span>
+                        </div>
+                        <h3 class="station-role">Freelance Software Engineer &amp; Systems Consultant</h3>
+                        <p class="station-company">Independent Contractor · Remote &amp; Nairobi</p>
+                        <p class="station-scope">
+                            Delivered 10+ custom enterprise web, mobile, and ERP platforms for private businesses and startup founders with 98% on-time completion and production-grade reliability.
+                        </p>
+                        <div class="station-tags" aria-label="Core technologies and domains">
+                            <span>Next.js 16</span>
+                            <span>Laravel 12</span>
+                            <span>Express 5</span>
+                            <span>TiDB Serverless</span>
+                            <span>Paystack</span>
+                            <span>Daraja M-Pesa</span>
+                        </div>
+                    </div>
+
+                    <div class="station-deliverables">
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>MtaaKeys &amp; Brixton Makunga HMS</h4>
+                                <span class="deliverable-stack">Next.js 16 · Express 5 · Laravel 12 · MySQL 8</span>
+                            </div>
+                            <p>
+                                Delivered full-stack property marketplace monorepo with algorithmic curation, alongside a 200+ endpoint clinical hospital ERP with observer-driven billing and FEFO pharmacy registers.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>K-Track &amp; Commercial Client Delivery</h4>
+                                <span class="deliverable-stack">React 19 · TiDB Serverless · Socket.IO · HMAC-SHA256</span>
+                            </div>
+                            <p>
+                                Engineered tutor commission agency SaaS with timing-safe HMAC guest checkout URLs, Paystack currency conversion, and delivered 10+ custom software solutions with 98% client satisfaction.
+                            </p>
+                        </div>
                     </div>
                 </article>
             </div>
