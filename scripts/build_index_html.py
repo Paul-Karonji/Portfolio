@@ -132,25 +132,46 @@ html_content = '''<!DOCTYPE html>
                     Filter systems by your engineering perspective or click <strong>Inspect Architecture</strong> on any flagship system to view its interactive topology, concurrency model, data flow, security invariants, and performance benchmarks.
                 </p>
 
-                <!-- Role Perspective Switcher -->
-                <div class="perspective-switcher" role="toolbar" aria-label="Filter projects by engineering perspective">
-                    <button class="perspective-button is-active" type="button" data-perspective="all" aria-pressed="true">
-                        <span>All Systems</span>
-                        <span class="perspective-count">24</span>
-                    </button>
-                    <button class="perspective-button" type="button" data-perspective="systems" aria-pressed="false">
-                        <span>Systems &amp; Distributed Backend</span>
-                        <span class="perspective-count">11</span>
-                    </button>
-                    <button class="perspective-button" type="button" data-perspective="product" aria-pressed="false">
-                        <span>Full-Stack &amp; Product Architecture</span>
-                        <span class="perspective-count">13</span>
-                    </button>
+                <!-- Systems Hub Controls: Tabbed Tiers + Perspective Filter -->
+                <div class="systems-hub-controls">
+                    <!-- Tier Navigation Tabs -->
+                    <div class="tier-nav-bar" role="tablist" aria-label="Engineered Systems Tiers">
+                        <button class="tier-nav-tab is-active" type="button" role="tab" aria-selected="true" data-tier-tab="tier1" id="tabTier1">
+                            <span class="tab-title">Flagship Systems</span>
+                            <span class="tab-count">8</span>
+                        </button>
+                        <button class="tier-nav-tab" type="button" role="tab" aria-selected="false" data-tier-tab="tier2" id="tabTier2">
+                            <span class="tab-title">Production Platforms</span>
+                            <span class="tab-count">12</span>
+                        </button>
+                        <button class="tier-nav-tab" type="button" role="tab" aria-selected="false" data-tier-tab="tier3" id="tabTier3">
+                            <span class="tab-title">Applied Labs &amp; Tools</span>
+                            <span class="tab-count">6</span>
+                        </button>
+                        <button class="tier-nav-tab" type="button" role="tab" aria-selected="false" data-tier-tab="all" id="tabTierAll">
+                            <span class="tab-title">All Systems</span>
+                            <span class="tab-count">26</span>
+                        </button>
+                    </div>
+
+                    <!-- Role Perspective Switcher -->
+                    <div class="perspective-switcher" role="toolbar" aria-label="Filter projects by engineering perspective">
+                        <span class="perspective-label">Perspective:</span>
+                        <button class="perspective-button is-active" type="button" data-perspective="all" aria-pressed="true">
+                            <span>All</span>
+                        </button>
+                        <button class="perspective-button" type="button" data-perspective="systems" aria-pressed="false">
+                            <span>Systems &amp; Backend</span>
+                        </button>
+                        <button class="perspective-button" type="button" data-perspective="product" aria-pressed="false">
+                            <span>Full-Stack &amp; Product</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <!-- TIER 1: FLAGSHIP PRODUCTION SYSTEMS -->
-            <div class="tier-block">
+            <div class="tier-block is-active" id="tierPanel1" data-tier-panel="tier1">
                 <div class="tier-header">
                     <h3>Tier 1: Flagship Production Systems</h3>
                     <span class="tier-badge">Deep Architectural Specs Available</span>
@@ -328,7 +349,7 @@ html_content = '''<!DOCTYPE html>
             </div>
 
             <!-- TIER 2: PRODUCTION PLATFORMS & SYSTEMS -->
-            <div class="tier-block">
+            <div class="tier-block" id="tierPanel2" data-tier-panel="tier2" hidden>
                 <div class="tier-header">
                     <h3>Tier 2: Production Platforms &amp; Systems</h3>
                     <span class="tier-badge">Live Deployments &amp; Core Systems</span>
@@ -342,6 +363,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>WIK Scholar School ERP</h3>
                         <p>Comprehensive School Management ERP with multi-role portals (SuperAdmin, School Admin, Bursar, Teacher, Parent OTP login), ledger-accurate fee invoicing, CBC curriculum rubric assessments, dynamic report card generation, and mid-year bulk CSV migration.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="wik-scholar">Inspect Architecture</button>
                             <span class="project-link project-link-muted">School ERP System</span>
                         </div>
                     </article>
@@ -353,6 +375,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>K-Track Tutor Agency SaaS</h3>
                         <p>Agency platform with task pooling, per-task real-time chat, Cloudflare R2 delivery, Paystack payments with USD→KES conversion, and timing-safe HMAC-SHA256 guest checkout URLs.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="ktrack">Inspect Architecture</button>
                             <a class="project-link" href="https://ktrack.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
                         </div>
                     </article>
@@ -364,6 +387,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>JHUB Africa Innovation Tracker</h3>
                         <p>Project management platform for JKUAT Hub with 4 user roles, 6-stage lifecycle tracking, mentor assignment, document repository, investor browsing, and audit logs. Live in active production.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="jhub-tracker">Inspect Architecture</button>
                             <a class="project-link" href="https://innovation.jhubafrica.com/" target="_blank" rel="noreferrer">View Project</a>
                         </div>
                     </article>
@@ -375,6 +399,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Logit Logistics Operations</h3>
                         <p>Logistics operations platform for Juba Errands with office waybill booking, transporter checkpoint updates, public parcel tracking, audit logs, and legacy Excel imports.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="logit">Inspect Architecture</button>
                             <a class="project-link" href="https://logit-api.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
                         </div>
                     </article>
@@ -386,6 +411,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Biashara Hub</h3>
                         <p>Production-grade headless e-commerce for the Kenyan market built on Medusa.js v2 and Next.js App Router, eliminating SaaS lock-in with native M-Pesa payment rails.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="biashara-hub">Inspect Architecture</button>
                             <a class="project-link" href="https://biashara-hub-storefront.onrender.com" target="_blank" rel="noreferrer">View Storefront</a>
                         </div>
                     </article>
@@ -397,6 +423,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>wiktrack Android App</h3>
                         <p>M-Pesa income tracker Android app with native Kotlin module parsing incoming M-Pesa SMS messages automatically, buffering transactions in local SQLite with background Supabase sync.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="wiktrack-app">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Mobile App</span>
                         </div>
                     </article>
@@ -408,6 +435,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Apollo's Den AI Studio</h3>
                         <p>Private AI Intelligence Studio &amp; OpenAI-compatible API host running Qwen 3 VL (8.8B Vision) at Q8_0 precision with 256k context and 4-bit KV caching on Oracle Cloud ARM Ampere A1.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="apollos-den">Inspect Architecture</button>
                             <a class="project-link" href="https://aiapollo.wiktechnologies.com" target="_blank" rel="noreferrer">View AI Studio</a>
                         </div>
                     </article>
@@ -419,6 +447,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Antigravity Quant Engine v6</h3>
                         <p>Multi-asset algorithmic trading engine built in Python with low-latency MetaTrader 5 (MT5) IPC, dual-tier agent architecture, 0–100 confluence scoring, dynamic profit protection, and Telegram command center.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="quant-engine">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Quant Trading System</span>
                         </div>
                     </article>
@@ -430,6 +459,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Hiro Autonomous Agent</h3>
                         <p>Self-hosted AI agent with multi-model workflows, document ingestion, web search, memory-backed conversations, voice input/output, and a dynamic self-improving skills runtime.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="hiro-agent">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Private Agent Mesh</span>
                         </div>
                     </article>
@@ -441,6 +471,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>WIK Technologies Portal</h3>
                         <p>Corporate website for WIK Technologies featuring service showcase, responsive assets, and an edge-hosted Hiro AI assistant running on Netlify Functions.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="wik-portal">Inspect Architecture</button>
                             <a class="project-link" href="https://wiktechnologies.com/" target="_blank" rel="noreferrer">View Website</a>
                         </div>
                     </article>
@@ -452,6 +483,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>BikeLab Parts Manager</h3>
                         <p>Desktop parts catalog and workshop inventory manager built with Electron + Vite, providing high-performance local hardware acceleration for warehouse cataloging.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="bikelab-parts">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Desktop Application</span>
                         </div>
                     </article>
@@ -463,6 +495,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>AsyncStream Concurrency Benchmark</h3>
                         <p>High-throughput asynchronous streaming benchmark diagnosing and resolving circular lock inversions between credit governors and backpressure sliding windows under burst saturation.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="asyncstream-bench">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Benchmark Suite</span>
                         </div>
                     </article>
@@ -470,7 +503,7 @@ html_content = '''<!DOCTYPE html>
             </div>
 
             <!-- TIER 3: APPLIED LABS & OPEN SOURCE -->
-            <div class="tier-block">
+            <div class="tier-block" id="tierPanel3" data-tier-panel="tier3" hidden>
                 <div class="tier-header">
                     <h3>Tier 3: Applied Labs &amp; Open-Source Builds</h3>
                     <span class="tier-badge">Interactive Visualizations &amp; APIs</span>
@@ -484,6 +517,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Neural Network Playground</h3>
                         <p>Interactive in-browser ML platform allowing users to design, train, and visualize neural networks in real-time with drag-and-drop layer configuration and MNIST digit training.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="nn-playground">Inspect Architecture</button>
                             <span class="project-link project-link-muted">TensorFlow.js Visualizer</span>
                         </div>
                     </article>
@@ -495,6 +529,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>CodeCraft AI Code Analyzer</h3>
                         <p>AI-assisted code analysis platform calculating cyclomatic complexity, cognitive complexity, and software science metrics with live Monaco editor integration.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="codecraft-ai">Inspect Architecture</button>
                             <span class="project-link project-link-muted">AST Code Analyzer</span>
                         </div>
                     </article>
@@ -506,6 +541,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Unsent Privacy Diary</h3>
                         <p>Private diary PWA shaped around privacy, offline IndexedDB caching, Supabase Row-Level Security, auto-lock, voice dictation, and encrypted ZIP backup exports.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="unsent-pwa">Inspect Architecture</button>
                             <a class="project-link" href="https://unsent-eosin.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
                         </div>
                     </article>
@@ -517,6 +553,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>Framel Commerce API</h3>
                         <p>Flower commerce backend with M-Pesa Daraja payments, Cloudinary media handling, Swagger documentation, and 45 passing automated unit and integration tests.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="framel-api">Inspect Architecture</button>
                             <a class="project-link" href="https://github.com/Paul-Karonji/framel" target="_blank" rel="noreferrer">View GitHub</a>
                         </div>
                     </article>
@@ -528,6 +565,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>ARCH Kenya</h3>
                         <p>Luxury-industrial architecture showcase website featuring warm earth tones, sophisticated project galleries, and responsive layout craftsmanship.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="arch-kenya">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Portfolio Showcase</span>
                         </div>
                     </article>
@@ -539,6 +577,7 @@ html_content = '''<!DOCTYPE html>
                         <h3>STAC Weather App</h3>
                         <p>Real-time global weather portal with dynamic condition-adaptive color gradients, 24-hour hourly forecasts, 7-day outlooks, and city search autocomplete.</p>
                         <div class="project-actions">
+                            <button class="button-inspect" type="button" data-inspect="stac-weather">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Utility Application</span>
                         </div>
                     </article>

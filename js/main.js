@@ -55,42 +55,66 @@
         sections.forEach((section) => observer.observe(section));
     }
 
-    // 3. Role-Perspective Switcher
+    // 3. Systems Hub Controls: Tabbed Tiers & Role-Perspective Switcher
+    const tierTabs = document.querySelectorAll("[data-tier-tab]");
+    const tierPanels = document.querySelectorAll("[data-tier-panel]");
     const perspectiveButtons = document.querySelectorAll("[data-perspective]");
     const projectCards = document.querySelectorAll(".project-card[data-perspective-tags]");
 
-    function updatePerspective(perspective) {
-        // Update button states
+    let currentTier = "tier1";
+    let currentPerspective = "all";
+
+    function updateHubDisplay() {
+        // Update tier tabs
+        tierTabs.forEach((tab) => {
+            const isActive = tab.dataset.tierTab === currentTier;
+            tab.classList.toggle("is-active", isActive);
+            tab.setAttribute("aria-selected", String(isActive));
+        });
+
+        // Update tier panels
+        tierPanels.forEach((panel) => {
+            const panelTier = panel.dataset.tierPanel;
+            const isVisible = currentTier === "all" || currentTier === panelTier;
+            panel.hidden = !isVisible;
+            panel.classList.toggle("is-active", isVisible);
+        });
+
+        // Update perspective buttons
         perspectiveButtons.forEach((btn) => {
-            const isActive = btn.dataset.perspective === perspective;
+            const isActive = btn.dataset.perspective === currentPerspective;
             btn.classList.toggle("is-active", isActive);
             btn.setAttribute("aria-pressed", String(isActive));
         });
 
-        // Filter cards
+        // Filter cards by perspective
         projectCards.forEach((card) => {
             const tags = (card.dataset.perspectiveTags || "").split(" ");
-            if (perspective === "all" || tags.includes(perspective)) {
-                card.classList.remove("is-filtered-out");
-            } else {
-                card.classList.add("is-filtered-out");
-            }
+            const matches = currentPerspective === "all" || tags.includes(currentPerspective);
+            card.classList.toggle("is-filtered-out", !matches);
         });
+    }
 
-        // Check if tier blocks have any visible cards
-        document.querySelectorAll(".tier-block").forEach((tier) => {
-            const visibleCards = tier.querySelectorAll(".project-card:not(.is-filtered-out)");
-            tier.style.display = visibleCards.length === 0 ? "none" : "";
+    if (tierTabs.length) {
+        tierTabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                currentTier = tab.dataset.tierTab;
+                updateHubDisplay();
+            });
         });
     }
 
     if (perspectiveButtons.length) {
         perspectiveButtons.forEach((btn) => {
             btn.addEventListener("click", () => {
-                updatePerspective(btn.dataset.perspective);
+                currentPerspective = btn.dataset.perspective;
+                updateHubDisplay();
             });
         });
     }
+
+    // Initialize display
+    updateHubDisplay();
 
     // 4. Interactive System Inspector Workbench
     const inspectorModal = document.getElementById("systemInspector");
