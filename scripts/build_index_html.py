@@ -324,12 +324,11 @@ html_content = '''<!DOCTYPE html>
                             <span class="project-link project-link-muted">Private Retail System</span>
                         </div>
                     </article>
-
                     <!-- Flagship 8: Brixton Makunga HMS -->
                     <article class="project-card project-card-large" data-perspective-tags="product all">
                         <div class="project-meta">
                             <span>Healthcare ERP</span>
-                            <span>Full-Stack Engineer</span>
+                            <span>Founder &amp; Systems Architect &middot; WIK</span>
                         </div>
                         <p class="project-stack"><strong>Tech stack:</strong> Laravel 12, React 19, Vite, MySQL 8, Observer Pattern, REST APIs</p>
                         <h3>Brixton Makunga Hospital Management System</h3>
@@ -407,7 +406,7 @@ html_content = '''<!DOCTYPE html>
                     <!-- Project 13: Biashara Hub -->
                     <article class="project-card" data-perspective-tags="product all">
                         <div class="project-meta"><span>Headless Commerce</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> Medusa.js v2, Next.js App Router, pnpm monorepo, M-Pesa</p>
+                        <p class="project-stack"><strong>Stack:</strong> Medusa.js v2, Next.js App Router, Tailwind CSS, PostgreSQL, M-Pesa</p>
                         <h3>Biashara Hub</h3>
                         <p>Production-grade headless e-commerce for the Kenyan market built on Medusa.js v2 and Next.js App Router, eliminating SaaS lock-in with native M-Pesa payment rails.</p>
                         <div class="project-actions">
@@ -416,10 +415,10 @@ html_content = '''<!DOCTYPE html>
                         </div>
                     </article>
 
-                    <!-- Project 14: wiktrack Mobile -->
-                    <article class="project-card" data-perspective-tags="systems product all">
-                        <div class="project-meta"><span>Mobile Fintech</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> React Native, Expo, Kotlin, Supabase, SQLite, Firebase FCM</p>
+                    <!-- Project 14: wiktrack -->
+                    <article class="project-card" data-perspective-tags="product systems all">
+                        <div class="project-meta"><span>Mobile App</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> React Native, Native Kotlin, SQLite, Supabase</p>
                         <h3>wiktrack Android App</h3>
                         <p>M-Pesa income tracker Android app with native Kotlin module parsing incoming M-Pesa SMS messages automatically, buffering transactions in local SQLite with background Supabase sync.</p>
                         <div class="project-actions">
@@ -430,8 +429,8 @@ html_content = '''<!DOCTYPE html>
 
                     <!-- Project 15: Apollo's Den -->
                     <article class="project-card" data-perspective-tags="systems all">
-                        <div class="project-meta"><span>AI Infrastructure</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> Python, Oracle ARM Ampere A1, Qwen 3 VL, Q8_0, SQLite WAL</p>
+                        <div class="project-meta"><span>AI Inference Host</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> Qwen 3 VL, llama.cpp, Oracle Cloud ARM Ampere A1 (24GB), Docker, Nginx</p>
                         <h3>Apollo's Den AI Studio</h3>
                         <p>Private AI Intelligence Studio &amp; OpenAI-compatible API host running Qwen 3 VL (8.8B Vision) at Q8_0 precision with 256k context and 4-bit KV caching on Oracle Cloud ARM Ampere A1.</p>
                         <div class="project-actions">
@@ -442,8 +441,8 @@ html_content = '''<!DOCTYPE html>
 
                     <!-- Project 16: Antigravity Quant Engine -->
                     <article class="project-card" data-perspective-tags="systems all">
-                        <div class="project-meta"><span>Quantitative Finance</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> Python, MetaTrader 5 IPC, asyncio, Telegram API</p>
+                        <div class="project-meta"><span>Algorithmic Trading</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> Python 3.11, MetaTrader 5 IPC, Telegram API, pandas, numpy</p>
                         <h3>Antigravity Quant Engine v6</h3>
                         <p>Multi-asset algorithmic trading engine built in Python with low-latency MetaTrader 5 (MT5) IPC, dual-tier agent architecture, 0–100 confluence scoring, dynamic profit protection, and Telegram command center.</p>
                         <div class="project-actions">
@@ -453,9 +452,9 @@ html_content = '''<!DOCTYPE html>
                     </article>
 
                     <!-- Project 17: Hiro AI Agent Mesh -->
-                    <article class="project-card" data-perspective-tags="systems all">
-                        <div class="project-meta"><span>AI Agent Mesh</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> TypeScript, Node.js, OpenRouter, PostgreSQL, SQLite, MCP</p>
+                    <article class="project-card" data-perspective-tags="systems product all">
+                        <div class="project-meta"><span>Agentic AI</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> Node.js, Python, DuckDuckGo API, Multi-Model LLM Routers, WebSocket</p>
                         <h3>Hiro Autonomous Agent</h3>
                         <p>Self-hosted AI agent with multi-model workflows, document ingestion, web search, memory-backed conversations, voice input/output, and a dynamic self-improving skills runtime.</p>
                         <div class="project-actions">
@@ -466,8 +465,8 @@ html_content = '''<!DOCTYPE html>
 
                     <!-- Project 18: WIK Technologies Portal -->
                     <article class="project-card" data-perspective-tags="product all">
-                        <div class="project-meta"><span>Company Portal</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> HTML5, CSS3, JavaScript, Netlify Functions, Sharp</p>
+                        <div class="project-meta"><span>Corporate Web</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> HTML5, CSS3, JavaScript, Netlify Edge Functions, Hiro AI</p>
                         <h3>WIK Technologies Portal</h3>
                         <p>Corporate website for WIK Technologies featuring service showcase, responsive assets, and an edge-hosted Hiro AI assistant running on Netlify Functions.</p>
                         <div class="project-actions">
@@ -477,9 +476,9 @@ html_content = '''<!DOCTYPE html>
                     </article>
 
                     <!-- Project 19: BikeLab Parts Desktop -->
-                    <article class="project-card" data-perspective-tags="systems all">
-                        <div class="project-meta"><span>Desktop Catalog</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> Electron, Vite, Node.js, TypeScript</p>
+                    <article class="project-card" data-perspective-tags="product all">
+                        <div class="project-meta"><span>Inventory System</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> Electron, Vite, React, Local SQLite</p>
                         <h3>BikeLab Parts Manager</h3>
                         <p>Desktop parts catalog and workshop inventory manager built with Electron + Vite, providing high-performance local hardware acceleration for warehouse cataloging.</p>
                         <div class="project-actions">
@@ -490,8 +489,8 @@ html_content = '''<!DOCTYPE html>
 
                     <!-- Project 20: AsyncStream Concurrency Benchmark -->
                     <article class="project-card" data-perspective-tags="systems all">
-                        <div class="project-meta"><span>Systems Benchmarking</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> Python, Asyncio, Concurrency Invariants, Mutexes</p>
+                        <div class="project-meta"><span>Concurrency Suite</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> TypeScript, Node.js AsyncHooks, EventEmitter, Mutex Profiler</p>
                         <h3>AsyncStream Concurrency Benchmark</h3>
                         <p>High-throughput asynchronous streaming benchmark diagnosing and resolving circular lock inversions between credit governors and backpressure sliding windows under burst saturation.</p>
                         <div class="project-actions">
@@ -505,15 +504,15 @@ html_content = '''<!DOCTYPE html>
             <!-- TIER 3: APPLIED LABS & OPEN SOURCE -->
             <div class="tier-block" id="tierPanel3" data-tier-panel="tier3" hidden>
                 <div class="tier-header">
-                    <h3>Tier 3: Applied Labs &amp; Open-Source Builds</h3>
-                    <span class="tier-badge">Interactive Visualizations &amp; APIs</span>
+                    <h3>Tier 3: Applied Labs &amp; Open Source</h3>
+                    <span class="tier-badge">Open-Source &amp; Research Engineering</span>
                 </div>
 
                 <div class="catalog-grid-tier3">
                     <!-- Project 21: Neural Network Playground -->
                     <article class="project-card" data-perspective-tags="all">
-                        <div class="project-meta"><span>Machine Learning Lab</span></div>
-                        <p class="project-stack"><strong>Stack:</strong> React 18, TensorFlow.js, Chart.js, HTML5 Canvas</p>
+                        <div class="project-meta"><span>ML Playground</span></div>
+                        <p class="project-stack"><strong>Stack:</strong> React 19, TensorFlow.js, Canvas API, Chart.js</p>
                         <h3>Neural Network Playground</h3>
                         <p>Interactive in-browser ML platform allowing users to design, train, and visualize neural networks in real-time with drag-and-drop layer configuration and MNIST digit training.</p>
                         <div class="project-actions">
@@ -603,12 +602,13 @@ html_content = '''<!DOCTYPE html>
                         <h3 class="station-role">Founder &amp; Systems Architect</h3>
                         <p class="station-company">WIK Technologies · Nairobi, Kenya</p>
                         <p class="station-scope">
-                            Founded a software engineering firm architecting high-concurrency backends, offline-first systems, IoT telematics, network billing automation, and cryptographic software for commercial clients.
+                            Founded a software engineering firm architecting high-concurrency backends, offline-first systems, IoT telematics, network billing automation, clinical hospital ERPs, and cryptographic software for commercial clients.
                         </p>
                         <div class="station-tags" aria-label="Core technologies and domains">
                             <span>Go Telematics</span>
                             <span>NestJS 11</span>
                             <span>KRA eTIMS</span>
+                            <span>Laravel 12</span>
                             <span>MikroTik API</span>
                             <span>Zero-Knowledge</span>
                             <span>Offline SQLite</span>
@@ -624,6 +624,16 @@ html_content = '''<!DOCTYPE html>
                             </div>
                             <p>
                                 Automated KRA eTIMS fiscal compliance engine (OSCU/VSCU), real-time M-Pesa STK push and C2B queues, and Paystack recurring subscription guards with suspended walls.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>Brixton Makunga Hospital Management System</h4>
+                                <span class="deliverable-stack">Laravel 12 · React 19 · MySQL 8 · Observer Pattern</span>
+                            </div>
+                            <p>
+                                Clinical hospital ERP architected with 200+ REST API endpoints, 56 migrations, automated ledger billing via Observer pattern, real-time triage queues, and pharmacy FEFO batch expiry controls.
                             </p>
                         </div>
 
@@ -674,6 +684,16 @@ html_content = '''<!DOCTYPE html>
                             </div>
                             <p>
                                 Task management SaaS with bidirectional Google Calendar OAuth2 sync and a native 13-tool Model Context Protocol (MCP) server enabling AI assistants to autonomously orchestrate schedules.
+                            </p>
+                        </div>
+
+                        <div class="deliverable-card">
+                            <div class="deliverable-header">
+                                <h4>WIK Scholar School ERP</h4>
+                                <span class="deliverable-stack">React · Node.js · PostgreSQL · Paystack</span>
+                            </div>
+                            <p>
+                                Comprehensive school management ERP with multi-role portals (Admin, Bursar, Teacher, Parent OTP), ledger-accurate fee invoicing, CBC curriculum rubrics, and bulk CSV migration tools.
                             </p>
                         </div>
                     </div>
@@ -731,13 +751,13 @@ html_content = '''<!DOCTYPE html>
                         <h3 class="station-role">Freelance Software Engineer &amp; Systems Consultant</h3>
                         <p class="station-company">Independent Contractor · Remote &amp; Nairobi</p>
                         <p class="station-scope">
-                            Delivered 10+ custom enterprise web, mobile, and ERP platforms for private businesses and startup founders with 98% on-time completion and production-grade reliability.
+                            Delivered 10+ custom enterprise web, mobile, and SaaS platforms for private businesses and startup founders with 98% on-time completion and production-grade reliability.
                         </p>
                         <div class="station-tags" aria-label="Core technologies and domains">
                             <span>Next.js 16</span>
-                            <span>Laravel 12</span>
                             <span>Express 5</span>
                             <span>TiDB Serverless</span>
+                            <span>PostgreSQL</span>
                             <span>Paystack</span>
                             <span>Daraja M-Pesa</span>
                         </div>
@@ -746,21 +766,21 @@ html_content = '''<!DOCTYPE html>
                     <div class="station-deliverables">
                         <div class="deliverable-card">
                             <div class="deliverable-header">
-                                <h4>MtaaKeys &amp; Brixton Makunga HMS</h4>
-                                <span class="deliverable-stack">Next.js 16 · Express 5 · Laravel 12 · MySQL 8</span>
+                                <h4>MtaaKeys Property Marketplace</h4>
+                                <span class="deliverable-stack">Next.js 16 · Express 5 · PostgreSQL · Prisma · Paystack</span>
                             </div>
                             <p>
-                                Delivered full-stack property marketplace monorepo with algorithmic curation, alongside a 200+ endpoint clinical hospital ERP with observer-driven billing and FEFO pharmacy registers.
+                                Full-stack property marketplace monorepo combining public listings, agent portals, dual Paystack subscription tiers (agent quotas up to KES 15k/mo), algorithmic featured curation, and automated security invariant CI testing.
                             </p>
                         </div>
 
                         <div class="deliverable-card">
                             <div class="deliverable-header">
-                                <h4>K-Track &amp; Commercial Client Delivery</h4>
+                                <h4>K-Track Tutor Agency SaaS</h4>
                                 <span class="deliverable-stack">React 19 · TiDB Serverless · Socket.IO · HMAC-SHA256</span>
                             </div>
                             <p>
-                                Engineered tutor commission agency SaaS with timing-safe HMAC guest checkout URLs, Paystack currency conversion, and delivered 10+ custom software solutions with 98% client satisfaction.
+                                Engineered multi-tutor agency commission SaaS with task pooling, real-time chat, Paystack USD→KES conversion, Cloudflare R2 file delivery, and timing-safe HMAC-SHA256 guest checkout URLs.
                             </p>
                         </div>
                     </div>
