@@ -129,21 +129,21 @@ html_content = '''<!DOCTYPE html>
                 <p class="section-kicker">Architectural Repertoire</p>
                 <h2 id="projects-title">Production systems, distributed infrastructure, and applied engineering.</h2>
                 <p style="color: var(--ink-soft); max-width: 72ch; margin: 0.5rem 0 0;">
-                    Filter systems by your engineering perspective or click <strong>Inspect Architecture ⚡</strong> on any flagship system to view its interactive topology, concurrency model, data flow, security invariants, and performance benchmarks.
+                    Filter systems by your engineering perspective or click <strong>Inspect Architecture</strong> on any flagship system to view its interactive topology, concurrency model, data flow, security invariants, and performance benchmarks.
                 </p>
 
                 <!-- Role Perspective Switcher -->
                 <div class="perspective-switcher" role="toolbar" aria-label="Filter projects by engineering perspective">
                     <button class="perspective-button is-active" type="button" data-perspective="all" aria-pressed="true">
-                        <span>🌐 All Engineered Systems</span>
+                        <span>All Systems</span>
                         <span class="perspective-count">24</span>
                     </button>
                     <button class="perspective-button" type="button" data-perspective="systems" aria-pressed="false">
-                        <span>⚙️ Systems &amp; Distributed Backend</span>
+                        <span>Systems &amp; Distributed Backend</span>
                         <span class="perspective-count">11</span>
                     </button>
                     <button class="perspective-button" type="button" data-perspective="product" aria-pressed="false">
-                        <span>🚀 Full-Stack &amp; Product Architecture</span>
+                        <span>Full-Stack &amp; Product Architecture</span>
                         <span class="perspective-count">13</span>
                     </button>
                 </div>
@@ -173,7 +173,7 @@ html_content = '''<!DOCTYPE html>
                             <li>Multi-tenant architecture with sub-50ms aggregated gross margin analytics and Cloudflare R2 document vault.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="wik-online-pos">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="wik-online-pos">Inspect Architecture</button>
                             <span class="project-link project-link-muted">VPS Private Production</span>
                         </div>
                     </article>
@@ -194,7 +194,7 @@ html_content = '''<!DOCTYPE html>
                             <li>Mobile offline-first SQLite buffer guaranteeing zero telemetry loss across cellular dead zones.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="fleettrack">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="fleettrack">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Enterprise Platform</span>
                         </div>
                     </article>
@@ -215,7 +215,7 @@ html_content = '''<!DOCTYPE html>
                             <li>Next.js 14 dark-mode NOC console with real-time interface queue graphs and captive portal ingress.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="hotbill">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="hotbill">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Telecom Infrastructure</span>
                         </div>
                     </article>
@@ -236,7 +236,7 @@ html_content = '''<!DOCTYPE html>
                             <li>Manifest V3 background service worker with auto-lock timers to prevent in-memory extraction attacks.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="padi">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="padi">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Security Product</span>
                         </div>
                     </article>
@@ -257,7 +257,7 @@ html_content = '''<!DOCTYPE html>
                             <li>Hardened security: raw-byte Paystack webhook verification, Helmet CSP, and rate-limited auth.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="mtaakeys">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="mtaakeys">Inspect Architecture</button>
                             <a class="project-link" href="https://mtaakeys.com/" target="_blank" rel="noreferrer">View Website</a>
                         </div>
                     </article>
@@ -278,7 +278,7 @@ html_content = '''<!DOCTYPE html>
                             <li>Native 13-tool MCP server for AI agent integration with scoring-based day planner algorithm.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="duesync">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="duesync">Inspect Architecture</button>
                             <a class="project-link" href="https://duesync.wiktechnologies.com/" target="_blank" rel="noreferrer">View Project</a>
                         </div>
                     </article>
@@ -299,7 +299,7 @@ html_content = '''<!DOCTYPE html>
                             <li>Zero-latency local SQLite operations with write-ahead logging (WAL) protecting data across power outages.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="wik-pos-desktop">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="wik-pos-desktop">Inspect Architecture</button>
                             <span class="project-link project-link-muted">Private Retail System</span>
                         </div>
                     </article>
@@ -320,7 +320,7 @@ html_content = '''<!DOCTYPE html>
                             <li>FEFO inventory dispatch preventing medication expiry and supporting Class A/B/C registers.</li>
                         </ul>
                         <div class="project-actions">
-                            <button class="button-inspect" type="button" data-inspect="brixton-hms">Inspect Architecture ⚡</button>
+                            <button class="button-inspect" type="button" data-inspect="brixton-hms">Inspect Architecture</button>
                             <a class="project-link" href="https://hmisdemo.wiktechnologies.com/" target="_blank" rel="noreferrer">View Demo</a>
                         </div>
                     </article>
@@ -710,7 +710,7 @@ html_content = '''<!DOCTYPE html>
                 </div>
             </div>
             <div class="inspector-footer">
-                <span class="inspector-tip">⚡ System Inspector: Interactive architectural review based on production codebase analysis.</span>
+                <span class="inspector-tip">System Inspector: Interactive architectural review based on production codebase analysis.</span>
                 <button class="button button-secondary button-sm" id="inspectorDismissBtn" type="button">Close Inspector</button>
             </div>
         </div>
