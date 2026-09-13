@@ -128,7 +128,7 @@ html_content = '''<!DOCTYPE html>
             <div class="section-heading">
                 <p class="section-kicker">Architectural Repertoire</p>
                 <h2 id="projects-title">Production systems, distributed infrastructure, and applied engineering.</h2>
-                <p style="color: var(--ink-soft); max-width: 72ch; margin: 0.5rem 0 0;">
+                <p style="color: var(--ink-soft); max-width: 96ch; margin: 0.5rem 0 0;">
                     Filter systems by your engineering perspective or click <strong>Inspect Architecture</strong> on any flagship system to view its interactive topology, concurrency model, data flow, security invariants, and performance benchmarks.
                 </p>
 
