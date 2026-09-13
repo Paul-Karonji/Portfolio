@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+import os
+
+html_content = '''<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -724,3 +726,10 @@
 </body>
 
 </html>
+'''
+
+output_path = os.path.join(os.getcwd(), 'index.html')
+with open(output_path, 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print(f"Successfully generated {output_path} ({len(html_content)} bytes)")
