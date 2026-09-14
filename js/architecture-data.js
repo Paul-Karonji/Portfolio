@@ -6,7 +6,7 @@
 window.ARCHITECTURE_SPECS = {
   'wik-online-pos': {
     id: 'wik-online-pos',
-    title: 'WIK Online Cloud POS (VPS Edition)',
+    title: 'WIK Online Cloud POS',
     badge: 'Cloud POS & Fiscal ERP',
     category: 'Enterprise Platform',
     stack: 'NestJS v11 · React 19 · PostgreSQL · KRA eTIMS · M-Pesa Daraja · Paystack · Cloudflare R2',

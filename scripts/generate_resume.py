@@ -171,7 +171,7 @@ def create_resume():
     
     add_job_header("Founder & Systems Architect", "WIK Technologies", "Nairobi, Kenya", "Oct 2025 – Present")
     add_bullet(
-        "WIK Online Cloud POS (VPS Edition)",
+        "WIK Online Cloud POS",
         "Architected multi-tenant cloud retail operations platform on NestJS 11, React 19, and PostgreSQL; built automated KRA eTIMS fiscalization worker (OSCU/VSCU) with AES-256 encrypted tax credentials, real-time M-Pesa STK push & C2B Paybill cashier reconciliation queue (C2BQueueModal), and Paystack recurring SaaS billing with lifecycle walls (ActiveSubscriptionGuard, SuspendedWall)."
     )
     add_bullet(
