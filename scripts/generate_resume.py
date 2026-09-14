@@ -175,6 +175,10 @@ def create_resume():
         "Architected multi-tenant cloud retail operations platform on NestJS 11, React 19, and PostgreSQL; built automated KRA eTIMS fiscalization worker (OSCU/VSCU) with AES-256 encrypted tax credentials, real-time M-Pesa STK push & C2B Paybill cashier reconciliation queue (C2BQueueModal), and Paystack recurring SaaS billing with lifecycle walls (ActiveSubscriptionGuard, SuspendedWall)."
     )
     add_bullet(
+        "Brixton Makunga Hospital Management System",
+        "Delivered 200+ endpoint clinical hospital ERP on Laravel 12, React 19, and MySQL 8 with automated ledger billing via Observer pattern, real-time triage queue management, and pharmacy FEFO batch expiry registers."
+    )
+    add_bullet(
         "FleetTrack Enterprise Telematics",
         "Engineered high-concurrency Go backend for batch IoT telematics ingestion and real-time WebSocket fan-out, paired with an offline-first React Native (Expo 57) driver mobile app buffering telemetry in local SQLite with QR manifest claiming and stoppage detection."
     )
@@ -211,12 +215,12 @@ def create_resume():
         "Shipped full-stack property marketplace monorepo (Next.js 16, Express 5, PostgreSQL, Prisma, Socket.IO) with dual Paystack subscription tiers (agents & land agents), logarithmic listing curation algorithms, and CI/CD security invariant tests."
     )
     add_bullet(
-        "Brixton Makunga Hospital Management System",
-        "Delivered 200+ endpoint hospital management ERP (Laravel 12, React 19, MySQL) with automated billing via Observer pattern, real-time queue management, and pharmacy FEFO inventory."
-    )
-    add_bullet(
         "K-Track Commission SaaS",
         "Built multi-tutor agency commission platform (React 19, Express 5, TiDB Serverless, Cloudflare R2, Socket.IO) with timing-safe HMAC guest checkout URLs and idempotent boot-time database patching."
+    )
+    add_bullet(
+        "BikeLab Parts Manager",
+        "Built desktop parts catalog and workshop inventory manager with Electron, Vite, React, and local SQLite, providing high-performance hardware acceleration for warehouse cataloging."
     )
     add_bullet(
         "Biashara Hub Headless Commerce",

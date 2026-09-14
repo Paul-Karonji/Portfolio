@@ -864,10 +864,10 @@ window.ARCHITECTURE_SPECS = {
 
   'bikelab-parts': {
     id: 'bikelab-parts',
-    title: 'BikeLab Parts Manager Desktop',
-    badge: 'Desktop Parts Catalog',
-    category: 'Offline-First Desktop System',
-    stack: 'Electron · Vite · Node.js · TypeScript · Local JSON/SQLite',
+    title: 'BikeLab Parts Manager',
+    badge: 'Inventory System',
+    category: 'Freelance Desktop System',
+    stack: 'Electron · Vite · React · Local SQLite',
     topology: `+-------------------------------------------------------------------------------+
 |                            DESKTOP UI (ELECTRON RENDERER)                     |
 |           Vite + React UI · Real-Time Parts Filtering · Workshop Tickets      |
