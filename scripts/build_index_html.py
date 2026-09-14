@@ -195,7 +195,7 @@ html_content = '''<!DOCTYPE html>
                         </ul>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="wik-online-pos">Inspect Architecture</button>
-                            <span class="project-link project-link-muted">VPS Private Production</span>
+                            <a class="project-link" href="https://pos.wiktechnologies.com" target="_blank" rel="noreferrer">View Live POS</a>
                         </div>
                     </article>
 
@@ -237,7 +237,7 @@ html_content = '''<!DOCTYPE html>
                         </ul>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="hotbill">Inspect Architecture</button>
-                            <span class="project-link project-link-muted">Telecom Infrastructure</span>
+                            <a class="project-link" href="https://hotbill.wiktechnologies.com/" target="_blank" rel="noreferrer">View HotBill KE</a>
                         </div>
                     </article>
 
@@ -300,7 +300,10 @@ html_content = '''<!DOCTYPE html>
                         </ul>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="duesync">Inspect Architecture</button>
-                            <a class="project-link" href="https://duesync.wiktechnologies.com/" target="_blank" rel="noreferrer">View Project</a>
+                            <div class="project-links-group">
+                                <a class="project-link" href="https://duesync.wiktechnologies.com/" target="_blank" rel="noreferrer">View Live</a>
+                                <a class="project-link" href="https://github.com/Paul-Karonji/DueSync" target="_blank" rel="noreferrer">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
@@ -411,7 +414,10 @@ html_content = '''<!DOCTYPE html>
                         <p>Production-grade headless e-commerce for the Kenyan market built on Medusa.js v2 and Next.js App Router, eliminating SaaS lock-in with native M-Pesa payment rails.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="biashara-hub">Inspect Architecture</button>
-                            <a class="project-link" href="https://biashara-hub-storefront.onrender.com" target="_blank" rel="noreferrer">View Storefront</a>
+                            <div class="project-links-group">
+                                <a class="project-link" href="https://biashara-hub-storefront.onrender.com" target="_blank" rel="noreferrer">View Storefront</a>
+                                <a class="project-link" href="https://github.com/Paul-Karonji/biashara-hub" target="_blank" rel="noreferrer">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
@@ -423,7 +429,7 @@ html_content = '''<!DOCTYPE html>
                         <p>M-Pesa income tracker Android app with native Kotlin module parsing incoming M-Pesa SMS messages automatically, buffering transactions in local SQLite with background Supabase sync.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="wiktrack-app">Inspect Architecture</button>
-                            <span class="project-link project-link-muted">Mobile App</span>
+                            <a class="project-link" href="https://wiktrack.vercel.app" target="_blank" rel="noreferrer">View App</a>
                         </div>
                     </article>
 
@@ -447,7 +453,7 @@ html_content = '''<!DOCTYPE html>
                         <p>Multi-asset algorithmic trading engine built in Python with low-latency MetaTrader 5 (MT5) IPC, dual-tier agent architecture, 0–100 confluence scoring, dynamic profit protection, and Telegram command center.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="quant-engine">Inspect Architecture</button>
-                            <span class="project-link project-link-muted">Quant Trading System</span>
+                            <a class="project-link" href="https://github.com/Apollo-txc/Python" target="_blank" rel="noreferrer">View GitHub</a>
                         </div>
                     </article>
 
@@ -459,7 +465,7 @@ html_content = '''<!DOCTYPE html>
                         <p>Self-hosted AI agent with multi-model workflows, document ingestion, web search, memory-backed conversations, voice input/output, and a dynamic self-improving skills runtime.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="hiro-agent">Inspect Architecture</button>
-                            <span class="project-link project-link-muted">Private Agent Mesh</span>
+                            <a class="project-link" href="https://github.com/Paul-Karonji/Hiro" target="_blank" rel="noreferrer">View GitHub</a>
                         </div>
                     </article>
 
@@ -541,7 +547,10 @@ html_content = '''<!DOCTYPE html>
                         <p>Private diary PWA shaped around privacy, offline IndexedDB caching, Supabase Row-Level Security, auto-lock, voice dictation, and encrypted ZIP backup exports.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="unsent-pwa">Inspect Architecture</button>
-                            <a class="project-link" href="https://unsent-eosin.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
+                            <div class="project-links-group">
+                                <a class="project-link" href="https://unsent-eosin.vercel.app/" target="_blank" rel="noreferrer">View Live</a>
+                                <a class="project-link" href="https://github.com/Paul-Karonji/unsent" target="_blank" rel="noreferrer">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
@@ -553,7 +562,10 @@ html_content = '''<!DOCTYPE html>
                         <p>Flower commerce backend with M-Pesa Daraja payments, Cloudinary media handling, Swagger documentation, and 45 passing automated unit and integration tests.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="framel-api">Inspect Architecture</button>
-                            <a class="project-link" href="https://github.com/Paul-Karonji/framel" target="_blank" rel="noreferrer">View GitHub</a>
+                            <div class="project-links-group">
+                                <a class="project-link" href="https://framel.vercel.app" target="_blank" rel="noreferrer">View Live</a>
+                                <a class="project-link" href="https://github.com/Paul-Karonji/framel" target="_blank" rel="noreferrer">GitHub</a>
+                            </div>
                         </div>
                     </article>
 
@@ -565,7 +577,7 @@ html_content = '''<!DOCTYPE html>
                         <p>Luxury-industrial architecture showcase website featuring warm earth tones, sophisticated project galleries, and responsive layout craftsmanship.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="arch-kenya">Inspect Architecture</button>
-                            <span class="project-link project-link-muted">Portfolio Showcase</span>
+                            <a class="project-link" href="https://github.com/Paul-Karonji/arch" target="_blank" rel="noreferrer">View GitHub</a>
                         </div>
                     </article>
 
@@ -577,7 +589,7 @@ html_content = '''<!DOCTYPE html>
                         <p>Real-time global weather portal with dynamic condition-adaptive color gradients, 24-hour hourly forecasts, 7-day outlooks, and city search autocomplete.</p>
                         <div class="project-actions">
                             <button class="button-inspect" type="button" data-inspect="stac-weather">Inspect Architecture</button>
-                            <span class="project-link project-link-muted">Utility Application</span>
+                            <a class="project-link" href="https://github.com/stacy-wk/Weather-App-Windsurf" target="_blank" rel="noreferrer">View GitHub</a>
                         </div>
                     </article>
                 </div>

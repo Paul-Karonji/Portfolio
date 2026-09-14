@@ -1302,6 +1302,13 @@ select {
     border-top: 1px dashed var(--line);
 }
 
+.project-links-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+}
+
 .button-inspect {
     display: inline-flex;
     align-items: center;
