@@ -1,2 +1,20 @@
-﻿__pycache__/
-*.pyc
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary / backup / cache files
+*.tmp
+*.bak
+*.swp
+*~
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor configs
+.vscode/
+.idea/
